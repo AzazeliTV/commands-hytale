@@ -10,23 +10,23 @@
   --bg-secondary: #262B38;
   --bg-card: #363D50;
   --bg-card-hover: #414A60;
-  --bg-admin-card: #3A3550;
-  --bg-admin-hover: #453E5C;
+  --bg-admin-card: #3A3845;
+  --bg-admin-hover: #454250;
   --bg-surface: #3E4558;
   --accent: #5B9CF6;
   --accent-glow: rgba(91, 156, 246, 0.25);
   --accent-teal: #22D3EE;
   --accent-violet: #A5B4FC;
-  --accent-admin: #FBBF24;
-  --accent-admin-glow: rgba(251, 191, 36, 0.25);
+  --accent-admin: #F59E0B;
+  --accent-admin-glow: rgba(245, 158, 11, 0.25);
   --text-primary: #F0F2F5;
   --text-secondary: #C2C9D6;
   --text-muted: #909AAE;
   --border: rgba(255, 255, 255, 0.12);
   --border-accent: rgba(91, 156, 246, 0.25);
-  --border-admin: rgba(251, 191, 36, 0.25);
+  --border-admin: rgba(245, 158, 11, 0.25);
   --success: #34D399;
-  --warning: #FBBF24;
+  --warning: #F59E0B;
   --danger: #F87171;
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -309,8 +309,8 @@ body {
 }
 
 .info-banner.warning {
-  background: rgba(251, 191, 36, 0.08);
-  border-color: rgba(251, 191, 36, 0.18);
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.18);
 }
 
 .info-icon {
@@ -328,7 +328,7 @@ body {
 }
 
 .info-banner.warning .info-icon {
-  background: rgba(251, 191, 36, 0.18);
+  background: rgba(245, 158, 11, 0.18);
   color: var(--accent-admin);
 }
 
@@ -342,7 +342,7 @@ body {
 }
 
 .info-banner.warning code {
-  background: rgba(251, 191, 36, 0.15);
+  background: rgba(245, 158, 11, 0.15);
   color: var(--accent-admin);
 }
 
@@ -397,8 +397,8 @@ body {
 }
 
 #admin .category-icon {
-  background: rgba(251, 191, 36, 0.12);
-  border-color: rgba(251, 191, 36, 0.15);
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.15);
   color: var(--accent-admin);
 }
 
@@ -532,24 +532,24 @@ body {
 /* Admin card */
 .admin-card {
   background: var(--bg-admin-card);
-  border-color: rgba(251, 191, 36, 0.1);
-  border-left: 3px solid rgba(251, 191, 36, 0.35);
+  border-color: rgba(245, 158, 11, 0.1);
+  border-left: 3px solid rgba(245, 158, 11, 0.35);
 }
 
 .admin-card::before {
   background: radial-gradient(
     300px circle at var(--mouse-x) var(--mouse-y),
-    rgba(251, 191, 36, 0.07) 0%,
+    rgba(245, 158, 11, 0.07) 0%,
     transparent 100%
   );
 }
 
 .admin-card:hover {
-  border-color: rgba(251, 191, 36, 0.3);
+  border-color: rgba(245, 158, 11, 0.3);
   border-left-color: var(--accent-admin);
   box-shadow:
     0 6px 24px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(251, 191, 36, 0.1);
+    0 0 0 1px rgba(245, 158, 11, 0.1);
 }
 
 /* ===== COMMAND NAME (clickable to copy) ===== */
@@ -588,7 +588,7 @@ body {
 }
 
 .admin-card .command-name:hover {
-  color: #FCD34D;
+  color: #FBBF24;
 }
 
 /* ===== COPY TOAST ===== */
@@ -660,7 +660,7 @@ body {
 }
 
 .command-perm code {
-  background: rgba(251, 191, 36, 0.12);
+  background: rgba(245, 158, 11, 0.12);
   padding: 2px 6px;
   border-radius: 3px;
   font-family: var(--font-mono);
