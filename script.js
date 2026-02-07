@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
       if (categoryVisible) {
         category.classList.remove('hidden');
         anyVisible = true;
+        // Auto-expand when searching
+        if (query) {
+          category.classList.remove('collapsed');
+        }
       } else {
         category.classList.add('hidden');
       }
@@ -72,5 +76,38 @@ document.addEventListener('DOMContentLoaded', function () {
     if (noResults) {
       noResults.style.display = anyVisible ? 'none' : 'block';
     }
+  }
+
+  // Category collapse/expand
+  var categoryHeaders = document.querySelectorAll('.category-header');
+  categoryHeaders.forEach(function (header) {
+    header.addEventListener('click', function () {
+      var category = header.closest('.category');
+      category.classList.toggle('collapsed');
+    });
+  });
+
+  // Expand all / Collapse all
+  var expandBtn = document.getElementById('expand-all');
+  var collapseBtn = document.getElementById('collapse-all');
+
+  if (expandBtn) {
+    expandBtn.addEventListener('click', function () {
+      var activeTab = document.querySelector('.tab-content.active');
+      if (!activeTab) return;
+      activeTab.querySelectorAll('.category').forEach(function (cat) {
+        cat.classList.remove('collapsed');
+      });
+    });
+  }
+
+  if (collapseBtn) {
+    collapseBtn.addEventListener('click', function () {
+      var activeTab = document.querySelector('.tab-content.active');
+      if (!activeTab) return;
+      activeTab.querySelectorAll('.category').forEach(function (cat) {
+        cat.classList.add('collapsed');
+      });
+    });
   }
 });
