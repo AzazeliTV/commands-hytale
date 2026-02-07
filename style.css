@@ -225,6 +225,7 @@ body {
   color: var(--text-muted);
   font-size: 0.95rem;
   pointer-events: none;
+  z-index: 2;
 }
 
 /* ===== TOGGLE CONTROLS ===== */
