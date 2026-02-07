@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Server Commands - Hytale Survival</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +15,8 @@
       <h1>Hytale Server Commands</h1>
       <p class="subtitle">Survival Server &mdash; Befehlsreferenz</p>
       <nav class="tab-nav">
-        <button class="tab-btn active" data-tab="player">Spieler Befehle</button>
-        <button class="tab-btn" data-tab="admin">Admin Befehle</button>
+        <button class="tab-btn active" data-tab="player"><i class="fa-solid fa-user"></i> Spieler Befehle</button>
+        <button class="tab-btn" data-tab="admin"><i class="fa-solid fa-shield-halved"></i> Admin Befehle</button>
       </nav>
     </div>
   </header>
@@ -23,7 +24,7 @@
   <main class="container">
 
     <div class="search-wrapper">
-      <span class="search-icon">&#128269;</span>
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
       <input type="text" class="search-input" placeholder="Spieler-Befehle durchsuchen..." autocomplete="off">
     </div>
 
@@ -31,14 +32,14 @@
     <section id="player" class="tab-content active">
 
       <div class="info-banner">
-        <span class="info-icon">i</span>
+        <span class="info-icon"><i class="fa-solid fa-circle-info"></i></span>
         <p>Alle Befehle werden im Chat mit <code>/</code> eingegeben. Nutze <code>/help</code> im Spiel fuer den interaktiven Guide. Bei Fragen wende dich an einen Admin.</p>
       </div>
 
       <!-- Teleportation -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#10148;</span>
+          <span class="category-icon"><i class="fa-solid fa-location-arrow"></i></span>
           <h2>Teleportation</h2>
         </div>
         <div class="commands-grid">
@@ -112,7 +113,7 @@
           <div class="command-card">
             <div class="command-name">/rtp</div>
             <div class="command-syntax">/rtp</div>
-            <div class="command-desc">Teleportiert dich zu einer zufaelligen Position in der Welt. Perfekt, um ein neues Gebiet zum Bauen zu finden. Reichweite abhaengig vom Rang (Default / Gold / Emerald).</div>
+            <div class="command-desc">Teleportiert dich zu einer zufaelligen Position in der Welt. Perfekt, um ein neues Gebiet zum Bauen zu finden. Reichweite abhaengig vom Rang.</div>
           </div>
 
           <div class="command-card">
@@ -127,7 +128,7 @@
       <!-- Wirtschaft -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128176;</span>
+          <span class="category-icon"><i class="fa-solid fa-coins"></i></span>
           <h2>Wirtschaft &amp; Handel</h2>
         </div>
         <div class="commands-grid">
@@ -186,7 +187,7 @@
       <!-- Gameplay -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#9829;</span>
+          <span class="category-icon"><i class="fa-solid fa-gamepad"></i></span>
           <h2>Gameplay</h2>
         </div>
         <div class="commands-grid">
@@ -230,16 +231,16 @@
           <div class="command-card">
             <div class="command-name">/clear</div>
             <div class="command-syntax">/clear</div>
-            <div class="command-desc">Leert dein komplettes Inventar. Vorsicht: Alle Items gehen unwiderruflich verloren!</div>
+            <div class="command-desc">Leert dein komplettes Inventar. <strong>Vorsicht:</strong> Alle Items gehen unwiderruflich verloren!</div>
           </div>
 
         </div>
       </div>
 
-      <!-- Kommunikation & Soziales -->
+      <!-- Kommunikation -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128172;</span>
+          <span class="category-icon"><i class="fa-solid fa-comments"></i></span>
           <h2>Kommunikation &amp; Soziales</h2>
         </div>
         <div class="commands-grid">
@@ -280,7 +281,7 @@
       <!-- Informationen -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128269;</span>
+          <span class="category-icon"><i class="fa-solid fa-circle-question"></i></span>
           <h2>Informationen</h2>
         </div>
         <div class="commands-grid">
@@ -315,7 +316,7 @@
       <!-- Land Claiming (SimpleClaims) -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#127968;</span>
+          <span class="category-icon"><i class="fa-solid fa-map-location-dot"></i></span>
           <h2>Land Claiming</h2>
         </div>
         <div class="commands-grid">
@@ -374,33 +375,33 @@
       <!-- Party System (PartyPro) -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128101;</span>
-          <h2>Party-System</h2>
+          <span class="category-icon"><i class="fa-solid fa-users"></i></span>
+          <h2>Party-System (PartyPro)</h2>
         </div>
         <div class="commands-grid">
 
           <div class="command-card">
-            <div class="command-name">Party erstellen</div>
-            <div class="command-syntax">PartyPro</div>
-            <div class="command-desc">Erstelle eine Gruppe mit anderen Spielern. Ihr seht euch gegenseitig auf der Karte, koennt euch teleportieren und teilt EXP.</div>
-          </div>
-
-          <div class="command-card">
-            <div class="command-name">Party einladen</div>
-            <div class="command-syntax">PartyPro</div>
-            <div class="command-desc">Lade Spieler in deine Party ein. Maximale Gruppengroesse: 2-16 Spieler (je nach Server-Einstellung).</div>
+            <div class="command-name">Party-GUI</div>
+            <div class="command-syntax">GUI-basiert (kein Slash-Command)</div>
+            <div class="command-desc">Erstelle und verwalte Gruppen ueber das GUI-Menue. Lade Spieler ein, teleportiere dich zu Mitgliedern und teile EXP (2-16 Spieler).</div>
           </div>
 
           <div class="command-card">
             <div class="command-name">Party HUD</div>
-            <div class="command-syntax">Automatisch</div>
-            <div class="command-desc">Zeigt Gesundheit, Ausdauer, Entfernung und Koordinaten aller Party-Mitglieder in Echtzeit an.</div>
+            <div class="command-syntax">Automatisch aktiv</div>
+            <div class="command-desc">Zeigt Gesundheit, Ausdauer, Entfernung und Koordinaten aller Party-Mitglieder in Echtzeit als Overlay an.</div>
+          </div>
+
+          <div class="command-card">
+            <div class="command-name">Karten-Marker</div>
+            <div class="command-syntax">Automatisch aktiv</div>
+            <div class="command-desc">Party-Mitglieder werden automatisch auf der Weltkarte und dem Kompass angezeigt.</div>
           </div>
 
           <div class="command-card">
             <div class="command-name">Ping-System</div>
             <div class="command-syntax">Mittlere Maustaste</div>
-            <div class="command-desc">Setze einen sichtbaren Ping-Beacon fuer deine Party-Mitglieder, um Orte zu markieren.</div>
+            <div class="command-desc">Setze einen sichtbaren Ping-Beacon fuer deine Party-Mitglieder, um Orte oder Gefahren zu markieren.</div>
           </div>
 
         </div>
@@ -409,15 +410,15 @@
       <!-- Skills & Quests (MMO Skill Tree) -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#9876;</span>
+          <span class="category-icon"><i class="fa-solid fa-wand-sparkles"></i></span>
           <h2>Skills &amp; Quests</h2>
         </div>
         <div class="commands-grid">
 
           <div class="command-card">
             <div class="command-name">/mmo</div>
-            <div class="command-syntax">/mmo oder /skilltree oder /mmoxp</div>
-            <div class="command-desc">Oeffnet den Skill-Tree mit deinem Fortschritt in allen Faehigkeiten (Mining, Swords, Farming usw.).</div>
+            <div class="command-syntax">/mmo oder /skilltree oder /skills oder /mmoxp</div>
+            <div class="command-desc">Oeffnet den Skill-Tree mit deinem Fortschritt in allen 23 Faehigkeiten (Mining, Swords, Farming, Cooking, Alchemy usw.).</div>
           </div>
 
           <div class="command-card">
@@ -429,7 +430,7 @@
           <div class="command-card">
             <div class="command-name">/xpd</div>
             <div class="command-syntax">/xpd &lt;Schwellenwert&gt;</div>
-            <div class="command-desc">Stellt ein, ab welchem XP-Wert die Anzeige erscheint. Beispiel: <code>/xpd 10</code> zeigt nur XP-Gewinne ab 10 an. <code>/xpd 0</code> zeigt alles.</div>
+            <div class="command-desc">Stellt ein, ab welchem XP-Wert die Benachrichtigung erscheint. <code>/xpd 10</code> zeigt nur Gewinne ab 10 XP. <code>/xpd 0</code> zeigt alles.</div>
           </div>
 
         </div>
@@ -438,15 +439,15 @@
       <!-- Rezepte & Items (JET) -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128214;</span>
+          <span class="category-icon"><i class="fa-solid fa-book-open"></i></span>
           <h2>Rezepte &amp; Items</h2>
         </div>
         <div class="commands-grid">
 
           <div class="command-card">
             <div class="command-name">/jet</div>
-            <div class="command-syntax">/jet oder /j oder /p</div>
-            <div class="command-desc">Oeffnet den Item- und Rezept-Browser. Durchsuche alle Items, sieh dir Crafting-Rezepte an und finde heraus, welche Materialien du brauchst.</div>
+            <div class="command-syntax">/jet oder /j</div>
+            <div class="command-desc">Oeffnet den Item- und Rezept-Browser. Durchsuche alle Items, sieh dir Crafting-Rezepte an und finde heraus, welche Materialien du brauchst. Alternativ: <code>Alt</code>-Taste.</div>
           </div>
 
           <div class="command-card">
@@ -456,7 +457,7 @@
           </div>
 
           <div class="command-card">
-            <div class="command-name">JET Suche</div>
+            <div class="command-name">JET Suchfilter</div>
             <div class="command-syntax">@modname, #kategorie, -ausschluss</div>
             <div class="command-desc">Nutze Filter in der Suchleiste: <code>@common</code> fuer Vanilla-Items, <code>#weapon</code> fuer Waffen, <code>-wood</code> um Holz auszuschliessen.</div>
           </div>
@@ -467,7 +468,7 @@
       <!-- HUD & Anzeige (Blocchio) -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128065;</span>
+          <span class="category-icon"><i class="fa-solid fa-eye"></i></span>
           <h2>HUD &amp; Anzeige</h2>
         </div>
         <div class="commands-grid">
@@ -484,6 +485,12 @@
             <div class="command-desc">Oeffnet das Konfigurations-GUI. Passe Position, Groesse und Darstellung des HUDs individuell an.</div>
           </div>
 
+          <div class="command-card">
+            <div class="command-name">/blocchio on / off</div>
+            <div class="command-syntax">/blocchio on oder /blocchio off</div>
+            <div class="command-desc">Schaltet das HUD explizit ein oder aus (Alternative zu toggle).</div>
+          </div>
+
         </div>
       </div>
 
@@ -495,14 +502,14 @@
     <section id="admin" class="tab-content">
 
       <div class="info-banner warning">
-        <span class="info-icon">!</span>
+        <span class="info-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
         <p>Diese Befehle sind nur fuer Admins und Moderatoren mit entsprechenden Berechtigungen verfuegbar. Missbrauch fuehrt zum Entzug der Rechte.</p>
       </div>
 
       <!-- Rang & Berechtigungen -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128272;</span>
+          <span class="category-icon"><i class="fa-solid fa-key"></i></span>
           <h2>Rang &amp; Berechtigungen</h2>
         </div>
         <div class="commands-grid">
@@ -541,7 +548,7 @@
       <!-- Region-Schutz -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128737;</span>
+          <span class="category-icon"><i class="fa-solid fa-shield"></i></span>
           <h2>Region-Schutz</h2>
         </div>
         <div class="commands-grid">
@@ -629,7 +636,7 @@
       <!-- Wirtschaft Admin -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128178;</span>
+          <span class="category-icon"><i class="fa-solid fa-vault"></i></span>
           <h2>Wirtschaft (Admin)</h2>
         </div>
         <div class="commands-grid">
@@ -654,7 +661,7 @@
       <!-- Welt-Verwaltung -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#127758;</span>
+          <span class="category-icon"><i class="fa-solid fa-globe"></i></span>
           <h2>Welt-Verwaltung</h2>
         </div>
         <div class="commands-grid">
@@ -695,13 +702,6 @@
           </div>
 
           <div class="command-card admin-card">
-            <div class="command-name">/mv</div>
-            <div class="command-syntax">/mv</div>
-            <div class="command-desc">Zugang zu Multiverse-Weltverwaltungsbefehlen.</div>
-            <div class="command-perm"><code>xqediicore.mv</code></div>
-          </div>
-
-          <div class="command-card admin-card">
             <div class="command-name">/mv create</div>
             <div class="command-syntax">/mv create &lt;Name&gt; [Optionen]</div>
             <div class="command-desc">Erstellt eine neue Welt, einschliesslich Void-Welten.</div>
@@ -716,17 +716,10 @@
           </div>
 
           <div class="command-card admin-card">
-            <div class="command-name">/mv info</div>
-            <div class="command-syntax">/mv info</div>
-            <div class="command-desc">Zeigt technische Welt-Infos wie Entity- und Chunk-Zaehler an.</div>
-            <div class="command-perm"><code>xqediicore.mvinfo</code></div>
-          </div>
-
-          <div class="command-card admin-card">
-            <div class="command-name">/mv list</div>
-            <div class="command-syntax">/mv list</div>
-            <div class="command-desc">Zeigt alle registrierten Welten und ihren Ladestatus an.</div>
-            <div class="command-perm"><code>xqediicore.mvlist</code></div>
+            <div class="command-name">/mv info &amp; /mv list</div>
+            <div class="command-syntax">/mv info oder /mv list</div>
+            <div class="command-desc">Zeigt technische Welt-Infos (Entities, Chunks) oder alle registrierten Welten an.</div>
+            <div class="command-perm"><code>xqediicore.mvinfo</code> / <code>xqediicore.mvlist</code></div>
           </div>
 
         </div>
@@ -735,7 +728,7 @@
       <!-- Entities & NPCs -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#129497;</span>
+          <span class="category-icon"><i class="fa-solid fa-person"></i></span>
           <h2>Entities &amp; NPCs</h2>
         </div>
         <div class="commands-grid">
@@ -774,7 +767,7 @@
       <!-- Kits & Crates -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#127873;</span>
+          <span class="category-icon"><i class="fa-solid fa-gift"></i></span>
           <h2>Kits &amp; Crates</h2>
         </div>
         <div class="commands-grid">
@@ -787,17 +780,10 @@
           </div>
 
           <div class="command-card admin-card">
-            <div class="command-name">/kit edit</div>
-            <div class="command-syntax">/kit edit &lt;Name&gt;</div>
-            <div class="command-desc">Bearbeitet den Inhalt eines bestehenden Kits.</div>
-            <div class="command-perm"><code>xqediicore.kit.edit</code></div>
-          </div>
-
-          <div class="command-card admin-card">
-            <div class="command-name">/kit delete</div>
-            <div class="command-syntax">/kit delete &lt;Name&gt;</div>
-            <div class="command-desc">Loescht ein Kit dauerhaft.</div>
-            <div class="command-perm"><code>xqediicore.kit.delete</code></div>
+            <div class="command-name">/kit edit &amp; delete</div>
+            <div class="command-syntax">/kit edit &lt;Name&gt; oder /kit delete &lt;Name&gt;</div>
+            <div class="command-desc">Bearbeitet den Inhalt oder loescht ein Kit dauerhaft.</div>
+            <div class="command-perm"><code>xqediicore.kit.edit</code> / <code>xqediicore.kit.delete</code></div>
           </div>
 
           <div class="command-card admin-card">
@@ -820,7 +806,7 @@
       <!-- Level & BattlePass Admin -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#11088;</span>
+          <span class="category-icon"><i class="fa-solid fa-star"></i></span>
           <h2>Level &amp; BattlePass (Admin)</h2>
         </div>
         <div class="commands-grid">
@@ -845,7 +831,7 @@
       <!-- Server-Konfiguration -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#9881;</span>
+          <span class="category-icon"><i class="fa-solid fa-gear"></i></span>
           <h2>Server-Konfiguration</h2>
         </div>
         <div class="commands-grid">
@@ -891,7 +877,7 @@
       <!-- CoreProtect -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128270;</span>
+          <span class="category-icon"><i class="fa-solid fa-database"></i></span>
           <h2>CoreProtect (Block-Logging)</h2>
         </div>
         <div class="commands-grid">
@@ -925,6 +911,20 @@
           </div>
 
           <div class="command-card admin-card">
+            <div class="command-name">/co near</div>
+            <div class="command-syntax">/co near</div>
+            <div class="command-desc">Schnelle Abfrage aller Aenderungen im Umkreis von 5 Bloecken um dich herum.</div>
+            <div class="command-perm"><code>coreprotect.near</code></div>
+          </div>
+
+          <div class="command-card admin-card">
+            <div class="command-name">/co undo</div>
+            <div class="command-syntax">/co undo</div>
+            <div class="command-desc">Macht den letzten Rollback oder Restore rueckgaengig.</div>
+            <div class="command-perm"><code>coreprotect.undo</code></div>
+          </div>
+
+          <div class="command-card admin-card">
             <div class="command-name">/co purge</div>
             <div class="command-syntax">/co purge t:&lt;Zeit&gt;</div>
             <div class="command-desc">Loescht alte Log-Daten. Beispiel: <code>/co purge t:30d</code> entfernt Daten aelter als 30 Tage.</div>
@@ -944,7 +944,7 @@
       <!-- Grabsteine -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#9904;</span>
+          <span class="category-icon"><i class="fa-solid fa-cross"></i></span>
           <h2>Grabsteine</h2>
         </div>
         <div class="commands-grid">
@@ -980,7 +980,7 @@
           <div class="command-card admin-card">
             <div class="command-name">/gstimer</div>
             <div class="command-syntax">/gstimer &lt;Minuten&gt;</div>
-            <div class="command-desc">Setzt den Auto-Break-Timer. Der Grabstein zerfaellt nach der gesetzten Zeit automatisch und droppt die Items. <code>0</code> = deaktiviert.</div>
+            <div class="command-desc">Setzt den Auto-Break-Timer. Grabstein zerfaellt automatisch nach gesetzter Zeit. <code>0</code> = deaktiviert.</div>
             <div class="command-perm">Admin</div>
           </div>
 
@@ -990,7 +990,7 @@
       <!-- Claims Admin -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#127968;</span>
+          <span class="category-icon"><i class="fa-solid fa-map-location-dot"></i></span>
           <h2>Claims (Admin)</h2>
         </div>
         <div class="commands-grid">
@@ -1024,6 +1024,27 @@
           </div>
 
           <div class="command-card admin-card">
+            <div class="command-name">/scp admin-create</div>
+            <div class="command-syntax">/scp admin-create</div>
+            <div class="command-desc">Erstellt eine Party ohne Besitzer fuer administrative Zwecke.</div>
+            <div class="command-perm"><code>simpleclaims.admin.admin-create-party</code></div>
+          </div>
+
+          <div class="command-card admin-card">
+            <div class="command-name">/scp admin-modify-chunk</div>
+            <div class="command-syntax">/scp admin-modify-chunk</div>
+            <div class="command-desc">Aendert das Chunk-Limit der ueber admin-party-list ausgewaehlten Party.</div>
+            <div class="command-perm"><code>simpleclaims.admin.admin-modify-chunk</code></div>
+          </div>
+
+          <div class="command-card admin-card">
+            <div class="command-name">/scp admin-modify-chunk-all</div>
+            <div class="command-syntax">/scp admin-modify-chunk-all &lt;Anzahl&gt;</div>
+            <div class="command-desc">Aendert das Chunk-Limit fuer ALLE existierenden Parties gleichzeitig.</div>
+            <div class="command-perm"><code>simpleclaims.admin.admin-modify-chunk-all</code></div>
+          </div>
+
+          <div class="command-card admin-card">
             <div class="command-name">/scp add-chunk-amount</div>
             <div class="command-syntax">/scp add-chunk-amount &lt;Spieler&gt; &lt;Anzahl&gt;</div>
             <div class="command-desc">Erhoeht oder verringert das Chunk-Limit eines Spielers. Negative Werte moeglich.</div>
@@ -1036,15 +1057,22 @@
       <!-- MMO Skill Tree Admin -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#9876;</span>
+          <span class="category-icon"><i class="fa-solid fa-wand-sparkles"></i></span>
           <h2>MMO Skill Tree (Admin)</h2>
         </div>
         <div class="commands-grid">
 
           <div class="command-card admin-card">
+            <div class="command-name">/mmoadmin</div>
+            <div class="command-syntax">/mmoadmin</div>
+            <div class="command-desc">Oeffnet das visuelle Admin-Dashboard. Verwalte XP-Werte, Leveling-Speed, Belohnungen, Sprachen, Skill-Trees und Einstellungen.</div>
+            <div class="command-perm"><code>mmoskilltree.command.*</code></div>
+          </div>
+
+          <div class="command-card admin-card">
             <div class="command-name">/setmmoxp</div>
             <div class="command-syntax">/setmmoxp &lt;Skill&gt; &lt;Wert&gt; --target=&lt;Spieler&gt;</div>
-            <div class="command-desc">Setzt die XP eines bestimmten Skills fuer einen Spieler. Nutze <code>all</code> als Skill um alle gleichzeitig zu setzen.</div>
+            <div class="command-desc">Setzt die XP eines Skills fuer einen Spieler. Nutze <code>all</code> als Skill um alle gleichzeitig zu setzen.</div>
             <div class="command-perm"><code>mmoskilltree.command.setxp.others</code></div>
           </div>
 
@@ -1057,14 +1085,14 @@
 
           <div class="command-card admin-card">
             <div class="command-name">/mmoboost give</div>
-            <div class="command-syntax">/mmoboost give|&lt;Spieler&gt;|&lt;Skill&gt;|&lt;Multiplikator&gt;|&lt;Dauer&gt;</div>
-            <div class="command-desc">Gibt einem Spieler einen XP-Boost-Token. Optional <code>--quantity=5</code> fuer mehrere.</div>
+            <div class="command-syntax">/mmoboost give|&lt;Spieler&gt;|&lt;Skill&gt;|&lt;Multi&gt;|&lt;Dauer&gt;</div>
+            <div class="command-desc">Gibt einem Spieler einen persoenlichen XP-Boost-Token. Optional <code>--quantity=5</code> fuer mehrere.</div>
             <div class="command-perm"><code>mmoskilltree.command.*</code></div>
           </div>
 
           <div class="command-card admin-card">
             <div class="command-name">/mmoboost global</div>
-            <div class="command-syntax">/mmoboost global|&lt;Skill&gt;|&lt;Multiplikator&gt;|&lt;Dauer&gt;</div>
+            <div class="command-syntax">/mmoboost global|&lt;Skill&gt;|&lt;Multi&gt;|&lt;Dauer&gt;</div>
             <div class="command-desc">Aktiviert einen serverweiten globalen XP-Boost fuer einen bestimmten Skill.</div>
             <div class="command-perm"><code>mmoskilltree.command.*</code></div>
           </div>
@@ -1073,6 +1101,27 @@
             <div class="command-name">/mmoconfig reload</div>
             <div class="command-syntax">/mmoconfig reload</div>
             <div class="command-desc">Laedt die MMO-Konfiguration neu und aktualisiert Stat-Boni fuer alle Online-Spieler.</div>
+            <div class="command-perm"><code>mmoskilltree.command.*</code></div>
+          </div>
+
+          <div class="command-card admin-card">
+            <div class="command-name">/mmoconfig reloaddefaults</div>
+            <div class="command-syntax">/mmoconfig reloaddefaults</div>
+            <div class="command-desc">Setzt ALLE XP-Werte und Configs auf die Standard-Werte zurueck. Nuetzlich nach einem Update.</div>
+            <div class="command-perm"><code>mmoskilltree.command.*</code></div>
+          </div>
+
+          <div class="command-card admin-card">
+            <div class="command-name">/mmoconfig resetrewards</div>
+            <div class="command-syntax">/mmoconfig resetrewards --args=&lt;Spieler&gt;</div>
+            <div class="command-desc">Setzt alle eingeloesten Item-Belohnungen eines Spielers zurueck. Der Spieler kann sie erneut einloesen.</div>
+            <div class="command-perm"><code>mmoskilltree.command.*</code></div>
+          </div>
+
+          <div class="command-card admin-card">
+            <div class="command-name">/mmoconfig basexp &amp; scale</div>
+            <div class="command-syntax">/mmoconfig basexp --args=&lt;Wert&gt; oder /mmoconfig scale --args=&lt;Wert&gt;</div>
+            <div class="command-desc">Aendert die Basis-XP oder den Skalierungsfaktor der Leveling-Formel. Zeigt danach XP-Anforderungen fuer Meilenstein-Level.</div>
             <div class="command-perm"><code>mmoskilltree.command.*</code></div>
           </div>
 
@@ -1086,10 +1135,10 @@
         </div>
       </div>
 
-      <!-- Mod-Updates (nyoUpdates) -->
+      <!-- Mod-Updates -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128259;</span>
+          <span class="category-icon"><i class="fa-solid fa-arrows-rotate"></i></span>
           <h2>Mod-Updates (nyoUpdates)</h2>
         </div>
         <div class="commands-grid">
@@ -1111,7 +1160,7 @@
           <div class="command-card admin-card">
             <div class="command-name">/updates disable</div>
             <div class="command-syntax">/updates disable</div>
-            <div class="command-desc">Deaktiviert einen Mod. Gesperrte Dateien werden automatisch zu <code>.disabled</code> umbenannt.</div>
+            <div class="command-desc">Deaktiviert einen Mod. Gesperrte Dateien werden zu <code>.disabled</code> umbenannt.</div>
             <div class="command-perm"><code>nyoupdates.base</code></div>
           </div>
 
@@ -1125,7 +1174,7 @@
           <div class="command-card admin-card">
             <div class="command-name">/updates debug check</div>
             <div class="command-syntax">/updates debug check</div>
-            <div class="command-desc">Ausfuehrliche Update-Pruefung mit CurseForge-URLs, Versionsvergleich und detailliertem Ergebnis fuer jeden Mod.</div>
+            <div class="command-desc">Ausfuehrliche Update-Pruefung mit Versionsvergleich und detailliertem Ergebnis pro Mod.</div>
             <div class="command-perm"><code>nyoupdates.base</code></div>
           </div>
 
@@ -1135,7 +1184,7 @@
       <!-- Scoreboard -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon">&#128202;</span>
+          <span class="category-icon"><i class="fa-solid fa-chart-simple"></i></span>
           <h2>Scoreboard</h2>
         </div>
         <div class="commands-grid">
@@ -1143,7 +1192,7 @@
           <div class="command-card admin-card">
             <div class="command-name">/sb reload</div>
             <div class="command-syntax">/sb reload</div>
-            <div class="command-desc">Laedt die Scoreboard-Konfiguration neu (WiFlow's Scoreboard). Aenderungen werden sofort sichtbar ohne Serverneustart.</div>
+            <div class="command-desc">Laedt die Scoreboard-Konfiguration neu (WiFlow's Scoreboard). Sofort sichtbar ohne Serverneustart.</div>
             <div class="command-perm">Admin</div>
           </div>
 
