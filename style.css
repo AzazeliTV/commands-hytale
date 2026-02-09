@@ -19,6 +19,7 @@
   --text-muted: #909AAE;
   --border: rgba(255, 255, 255, 0.12);
   --warning: #F59E0B;
+  --accent-hytale: #10B981;
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --radius: 12px;
@@ -146,7 +147,8 @@ body {
 
 .stat-item:nth-child(1) i { color: var(--accent); }
 .stat-item:nth-child(2) i { color: var(--accent-admin); }
-.stat-item:nth-child(3) i { color: var(--accent-violet); }
+.stat-item:nth-child(3) i { color: var(--accent-hytale); }
+.stat-item:nth-child(4) i { color: var(--accent-violet); }
 
 /* ===== TAB NAVIGATION ===== */
 .tab-nav {
@@ -304,6 +306,11 @@ body {
   border-color: rgba(245, 158, 11, 0.18);
 }
 
+.info-banner.hytale {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.18);
+}
+
 .info-icon {
   display: flex;
   align-items: center;
@@ -321,6 +328,11 @@ body {
 .info-banner.warning .info-icon {
   background: rgba(245, 158, 11, 0.18);
   color: var(--accent-admin);
+}
+
+.info-banner.hytale .info-icon {
+  background: rgba(16, 185, 129, 0.18);
+  color: var(--accent-hytale);
 }
 
 .info-banner code {
@@ -543,6 +555,45 @@ body {
     0 0 0 1px rgba(245, 158, 11, 0.1);
 }
 
+/* Hytale card */
+.hytale-card {
+  background: var(--bg-card);
+  border-color: rgba(16, 185, 129, 0.1);
+  border-left: 3px solid rgba(16, 185, 129, 0.35);
+}
+
+.hytale-card::before {
+  background: radial-gradient(
+    300px circle at var(--mouse-x) var(--mouse-y),
+    rgba(16, 185, 129, 0.07) 0%,
+    transparent 100%
+  );
+}
+
+.hytale-card:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+  border-left-color: var(--accent-hytale);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(16, 185, 129, 0.1);
+}
+
+#hytale .category-icon {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.15);
+  color: var(--accent-hytale);
+}
+
+.tab-btn[data-tab="admin"].active {
+  background: var(--accent-admin);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.tab-btn[data-tab="hytale"].active {
+  background: var(--accent-hytale);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
 /* ===== COMMAND NAME (clickable to copy) ===== */
 .command-name {
   font-family: var(--font-mono);
@@ -580,6 +631,19 @@ body {
 
 .admin-card .command-name:hover {
   color: #FBBF24;
+}
+
+.hytale-card .command-name {
+  color: var(--accent-hytale);
+}
+
+.hytale-card .command-name:hover {
+  color: #34D399;
+}
+
+.hytale-card .command-perm code {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--accent-hytale);
 }
 
 /* ===== COPY TOAST ===== */

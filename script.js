@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var searchInput = document.querySelector('.search-input');
       if (searchInput) {
-        var label = target === 'admin' ? 'Admin-Befehle' : 'Spieler-Befehle';
+        var label = target === 'admin' ? 'Admin-Befehle' : target === 'hytale' ? 'Hytale-Befehle' : 'Spieler-Befehle';
         searchInput.placeholder = label + ' durchsuchen...';
         searchInput.value = '';
         filterCommands('');

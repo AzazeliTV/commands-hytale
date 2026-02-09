@@ -21,11 +21,13 @@
       <div class="hero-stats">
         <span class="stat-item"><i class="fa-solid fa-terminal"></i> 53 Spieler-Befehle</span>
         <span class="stat-item"><i class="fa-solid fa-shield-halved"></i> 80 Admin-Befehle</span>
+        <span class="stat-item"><i class="fa-solid fa-cube"></i> 43 Hytale-Befehle</span>
         <span class="stat-item"><i class="fa-solid fa-puzzle-piece"></i> 35+ Mods</span>
       </div>
       <nav class="tab-nav">
         <button class="tab-btn active" data-tab="player"><i class="fa-solid fa-user"></i> Spieler</button>
         <button class="tab-btn" data-tab="admin"><i class="fa-solid fa-shield-halved"></i> Admin</button>
+        <button class="tab-btn" data-tab="hytale"><i class="fa-solid fa-cube"></i> Hytale</button>
       </nav>
     </div>
   </header>
@@ -1304,6 +1306,380 @@
               <div class="command-syntax">/hytalor reload</div>
               <div class="command-desc">Lädt alle Hytalor-Patches neu (Asset-Patching-Framework). Hot-Reload ohne Neustart.</div>
               <div class="command-perm"><code>hytalor.admin</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="no-results">Keine Befehle gefunden. Versuche einen anderen Suchbegriff.</div>
+
+    </section>
+
+    <!-- ===================== HYTALE BEFEHLE ===================== -->
+    <section id="hytale" class="tab-content">
+
+      <div class="info-banner hytale">
+        <span class="info-icon"><i class="fa-solid fa-cube"></i></span>
+        <p>Vanilla Hytale-Befehle, die mit dem Grundspiel kommen. Die meisten benötigen <strong>OP-Rechte</strong> &mdash; nutze <code>/op self</code> im Singleplayer oder lass dir OP vom Server-Owner geben. Tippe <code>/help</code> im Spiel f&uuml;r die vollst&auml;ndige Liste.</p>
+      </div>
+
+      <!-- Allgemein -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-circle-info"></i></span>
+          <h2>Allgemein</h2>
+          <span class="category-count">4</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/help</div>
+              <div class="command-syntax">/help</div>
+              <div class="command-desc">Zeigt eine klickbare Liste aller verf&uuml;gbaren Hytale-Commands an.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/whereami</div>
+              <div class="command-syntax">/whereami</div>
+              <div class="command-desc">Zeigt deine aktuellen X, Y, Z Koordinaten an.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/unstuck</div>
+              <div class="command-syntax">/unstuck</div>
+              <div class="command-desc">Teleportiert dich zum h&ouml;chsten festen Block an deiner Position &mdash; hilft wenn du feststeckst.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/say</div>
+              <div class="command-syntax">/say &lt;Nachricht&gt;</div>
+              <div class="command-desc">Sendet eine Nachricht an alle verbundenen Spieler &uuml;ber alle Welten hinweg.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Server-Verwaltung -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-server"></i></span>
+          <h2>Server-Verwaltung</h2>
+          <span class="category-count">12</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/op</div>
+              <div class="command-syntax">/op self | /op add &lt;Spieler&gt; | /op remove &lt;Spieler&gt;</div>
+              <div class="command-desc">OP-Rechte verwalten. <code>/op self</code> f&uuml;r dich selbst, <code>/op add</code> um andere zu berechtigen.</div>
+              <div class="command-perm"><code>OP / Konsole</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/perm</div>
+              <div class="command-syntax">/perm &lt;Unterbefehl&gt;</div>
+              <div class="command-desc">Hytale-eigenes Berechtigungssystem. Verwaltet Gruppen und Spieler-Rechte (gespeichert in <code>permissions.json</code>).</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/kick</div>
+              <div class="command-syntax">/kick &lt;Spieler&gt;</div>
+              <div class="command-desc">Entfernt einen Spieler vom Server. Der Spieler kann sofort wieder joinen.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/ban</div>
+              <div class="command-syntax">/ban &lt;Spieler&gt;</div>
+              <div class="command-desc">Bannt einen Spieler permanent. Unterst&uuml;tzt Online-Usernamen und Offline-UUIDs. Gespeichert in <code>bans.json</code>.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/unban</div>
+              <div class="command-syntax">/unban &lt;Spieler&gt;</div>
+              <div class="command-desc">Hebt einen Ban auf und erlaubt dem Spieler wieder beizutreten.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/whitelist</div>
+              <div class="command-syntax">/whitelist &lt;Unterbefehl&gt;</div>
+              <div class="command-desc">Verwaltet die Server-Whitelist. Unterst&uuml;tzt Usernamen und UUIDs. Gespeichert in <code>whitelist.json</code>.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/sudo</div>
+              <div class="command-syntax">/sudo &lt;Spieler&gt; &lt;Command&gt;</div>
+              <div class="command-desc">F&uuml;hrt einen Command als ein anderer Spieler aus.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/stop</div>
+              <div class="command-syntax">/stop</div>
+              <div class="command-desc">F&auml;hrt den Server sofort herunter.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/backup</div>
+              <div class="command-syntax">/backup</div>
+              <div class="command-desc">Erstellt sofort ein vollst&auml;ndiges Backup des gesamten Universums.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/notify</div>
+              <div class="command-syntax">/notify &lt;Nachricht&gt;</div>
+              <div class="command-desc">Sendet eine Broadcast-Benachrichtigung an alle Spieler auf allen Welten.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/plugin</div>
+              <div class="command-syntax">/plugin &lt;Unterbefehl&gt;</div>
+              <div class="command-desc">Verwaltet Server-Plugins (installieren, deaktivieren, Infos anzeigen).</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/world save</div>
+              <div class="command-syntax">/world save</div>
+              <div class="command-desc">Speichert alle Welten. Jede Welt hat ihre eigene Config unter <code>universe/worlds/</code>.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Gameplay & Teleportation -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-gamepad"></i></span>
+          <h2>Gameplay &amp; Teleportation</h2>
+          <span class="category-count">6</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/gamemode</div>
+              <div class="command-syntax">/gamemode adventure|creative oder /gm a|c</div>
+              <div class="command-desc">Wechselt den Spielmodus. Creative aktiviert Fliegen, Unverwundbarkeit und unbegrenzte Ressourcen.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/give</div>
+              <div class="command-syntax">/give &lt;Item_ID&gt; --quantity=&lt;Anzahl&gt;</div>
+              <div class="command-desc">Spawnt Items ins Inventar. Beispiel: <code>/give Weapon_Sword_Crude --quantity=1</code>. Auch an andere Spieler m&ouml;glich.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/heal</div>
+              <div class="command-syntax">/heal</div>
+              <div class="command-desc">Stellt Gesundheit und Ausdauer auf Maximum wieder her.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/tp</div>
+              <div class="command-syntax">/tp &lt;x&gt; &lt;y&gt; &lt;z&gt; | /tp &lt;Spieler&gt;</div>
+              <div class="command-desc">Teleportiert dich zu Koordinaten oder einem Spieler. Auch: <code>/tp &lt;Spieler1&gt; &lt;Spieler2&gt;</code> um Spieler zueinander zu teleportieren.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/spawning</div>
+              <div class="command-syntax">/spawning enable | /spawning disable</div>
+              <div class="command-desc">Schaltet das automatische NPC-Spawning in der Welt ein oder aus.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/npc</div>
+              <div class="command-syntax">/npc spawn &lt;Rolle&gt; | /npc clean</div>
+              <div class="command-desc">Spawnt einen NPC mit einer bestimmten Rolle oder entfernt gespawnte NPCs.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Zeit & Wetter -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-cloud-sun"></i></span>
+          <h2>Zeit &amp; Wetter</h2>
+          <span class="category-count">3</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/time</div>
+              <div class="command-syntax">/time set &lt;0-24&gt;</div>
+              <div class="command-desc">Setzt die Tageszeit. 0 = Mitternacht, 6 = Morgen, 12 = Mittag, 18 = Abend, 24 = Mitternacht.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/noon</div>
+              <div class="command-syntax">/noon</div>
+              <div class="command-desc">Setzt die Zeit auf Mittag und pausiert den Tag/Nacht-Zyklus.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/weather</div>
+              <div class="command-syntax">/weather set &lt;Zone_Typ_Intensit&auml;t&gt;</div>
+              <div class="command-desc">&Auml;ndert das Wetter. Beispiel: <code>/weather set Zone1_Cloudy_Medium</code>. Erfordert Zone, Wettertyp und Intensit&auml;t.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Builder Tools -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-hammer"></i></span>
+          <h2>Builder Tools (Creative)</h2>
+          <span class="category-count">18</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="commands-divider"><span>Auswahl</span></div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/pos1</div>
+              <div class="command-syntax">/pos1</div>
+              <div class="command-desc">Setzt die erste Ecke der Auswahl an deiner Position.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/pos2</div>
+              <div class="command-syntax">/pos2</div>
+              <div class="command-desc">Setzt die zweite Ecke der Auswahl an deiner Position.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/deselect</div>
+              <div class="command-syntax">/deselect</div>
+              <div class="command-desc">Hebt die aktuelle Auswahl auf.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/expand</div>
+              <div class="command-syntax">/expand &lt;Richtung&gt; &lt;Menge&gt;</div>
+              <div class="command-desc">Erweitert die Auswahl in eine Richtung. Auch: <code>/contractselection</code> zum Verkleinern.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/shift</div>
+              <div class="command-syntax">/shift &lt;Richtung&gt; &lt;Menge&gt;</div>
+              <div class="command-desc">Verschiebt die gesamte Auswahl ohne den Inhalt zu &auml;ndern.</div>
+            </div>
+
+            <div class="commands-divider"><span>Zwischenablage</span></div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/copy</div>
+              <div class="command-syntax">/copy</div>
+              <div class="command-desc">Kopiert die aktuelle Auswahl in die Zwischenablage.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/cut</div>
+              <div class="command-syntax">/cut</div>
+              <div class="command-desc">Schneidet die Auswahl aus (kopiert und entfernt Bl&ouml;cke).</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/paste</div>
+              <div class="command-syntax">/paste</div>
+              <div class="command-desc">F&uuml;gt den Inhalt der Zwischenablage an deiner aktuellen Position ein.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/rotate</div>
+              <div class="command-syntax">/rotate &lt;Grad&gt;</div>
+              <div class="command-desc">Dreht den Inhalt der Zwischenablage um die angegebenen Grad.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/flip</div>
+              <div class="command-syntax">/flip &lt;Achse&gt;</div>
+              <div class="command-desc">Spiegelt den Inhalt der Zwischenablage an der angegebenen Achse.</div>
+            </div>
+
+            <div class="commands-divider"><span>Block-Operationen</span></div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/fillblocks</div>
+              <div class="command-syntax">/fillblocks &lt;Block_Pattern&gt;</div>
+              <div class="command-desc">F&uuml;llt die gesamte Auswahl mit einem Block-Pattern.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/clearblocks</div>
+              <div class="command-syntax">/clearblocks</div>
+              <div class="command-desc">L&ouml;scht alle Bl&ouml;cke in der Auswahl. Auch mit expliziten Koordinaten m&ouml;glich.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/replace</div>
+              <div class="command-syntax">/replace &lt;Von_Block&gt; &lt;Zu_Block&gt;</div>
+              <div class="command-desc">Ersetzt einen Blocktyp durch einen anderen innerhalb der Auswahl.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/hollow</div>
+              <div class="command-syntax">/hollow</div>
+              <div class="command-desc">H&ouml;hlt die Auswahl aus &mdash; entfernt alle inneren Bl&ouml;cke und beh&auml;lt die H&uuml;lle.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/submerge</div>
+              <div class="command-syntax">/submerge &lt;Fl&uuml;ssigkeit&gt;</div>
+              <div class="command-desc">F&uuml;llt die Auswahl mit einer Fl&uuml;ssigkeit. Nutze <code>Empty</code> um Fl&uuml;ssigkeit zu entfernen.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/stack</div>
+              <div class="command-syntax">/stack &lt;Richtung&gt; &lt;Anzahl&gt;</div>
+              <div class="command-desc">Wiederholt/stapelt die Auswahl in eine Richtung. Auch: <code>/move</code> zum Verschieben von Bl&ouml;cken.</div>
+            </div>
+
+            <div class="commands-divider"><span>Verlauf</span></div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/undo</div>
+              <div class="command-syntax">/undo</div>
+              <div class="command-desc">Macht die letzte Builder-Aktion r&uuml;ckg&auml;ngig.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/redo</div>
+              <div class="command-syntax">/redo</div>
+              <div class="command-desc">Stellt die letzte r&uuml;ckg&auml;ngig gemachte Aktion wieder her.</div>
             </div>
 
           </div>
