@@ -10,16 +10,17 @@
   --bg-secondary: #262B38;
   --bg-card: #363D50;
   --bg-admin-card: #3A3845;
+  --bg-hytale-card: #34423E;
   --accent: #5B9CF6;
   --accent-teal: #22D3EE;
   --accent-violet: #A5B4FC;
   --accent-admin: #F59E0B;
+  --accent-hytale: #10B981;
   --text-primary: #F0F2F5;
   --text-secondary: #C2C9D6;
   --text-muted: #909AAE;
   --border: rgba(255, 255, 255, 0.12);
   --warning: #F59E0B;
-  --accent-hytale: #10B981;
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --radius: 12px;
@@ -335,6 +336,11 @@ body {
   color: var(--accent-hytale);
 }
 
+.info-banner.hytale code {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-hytale);
+}
+
 .info-banner code {
   background: rgba(91, 156, 246, 0.15);
   padding: 2px 6px;
@@ -557,25 +563,25 @@ body {
 
 /* Hytale card */
 .hytale-card {
-  background: var(--bg-card);
-  border-color: rgba(16, 185, 129, 0.1);
-  border-left: 3px solid rgba(16, 185, 129, 0.35);
+  background: var(--bg-hytale-card);
+  border-color: rgba(16, 185, 129, 0.15);
+  border-left: 3px solid rgba(16, 185, 129, 0.5);
 }
 
 .hytale-card::before {
   background: radial-gradient(
     300px circle at var(--mouse-x) var(--mouse-y),
-    rgba(16, 185, 129, 0.07) 0%,
+    rgba(16, 185, 129, 0.1) 0%,
     transparent 100%
   );
 }
 
 .hytale-card:hover {
-  border-color: rgba(16, 185, 129, 0.3);
+  border-color: rgba(16, 185, 129, 0.35);
   border-left-color: var(--accent-hytale);
   box-shadow:
     0 6px 24px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(16, 185, 129, 0.1);
+    0 0 0 1px rgba(16, 185, 129, 0.15);
 }
 
 #hytale .category-icon {
@@ -584,9 +590,17 @@ body {
   color: var(--accent-hytale);
 }
 
+.tab-btn[data-tab="admin"]:hover {
+  background: rgba(245, 158, 11, 0.12);
+}
+
 .tab-btn[data-tab="admin"].active {
   background: var(--accent-admin);
   box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.tab-btn[data-tab="hytale"]:hover {
+  background: rgba(16, 185, 129, 0.12);
 }
 
 .tab-btn[data-tab="hytale"].active {
@@ -638,6 +652,11 @@ body {
 }
 
 .hytale-card .command-name:hover {
+  color: #34D399;
+}
+
+.hytale-card .command-desc code {
+  background: rgba(16, 185, 129, 0.12);
   color: #34D399;
 }
 

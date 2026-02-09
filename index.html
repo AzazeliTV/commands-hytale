@@ -21,7 +21,7 @@
       <div class="hero-stats">
         <span class="stat-item"><i class="fa-solid fa-terminal"></i> 53 Spieler-Befehle</span>
         <span class="stat-item"><i class="fa-solid fa-shield-halved"></i> 80 Admin-Befehle</span>
-        <span class="stat-item"><i class="fa-solid fa-cube"></i> 43 Hytale-Befehle</span>
+        <span class="stat-item"><i class="fa-solid fa-cube"></i> 53 Hytale-Befehle</span>
         <span class="stat-item"><i class="fa-solid fa-puzzle-piece"></i> 35+ Mods</span>
       </div>
       <nav class="tab-nav">
@@ -1368,7 +1368,7 @@
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-server"></i></span>
           <h2>Server-Verwaltung</h2>
-          <span class="category-count">12</span>
+          <span class="category-count">11</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
         <div class="commands-grid-wrapper">
@@ -1451,10 +1451,74 @@
               <div class="command-perm"><code>OP</code></div>
             </div>
 
+          </div>
+        </div>
+      </div>
+
+      <!-- Welt-Verwaltung -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-earth-americas"></i></span>
+          <h2>Welt-Verwaltung</h2>
+          <span class="category-count">8</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/world create</div>
+              <div class="command-syntax">/world create &lt;WeltName&gt;</div>
+              <div class="command-desc">Erstellt eine neue Welt. Keine Leerzeichen oder Sonderzeichen im Namen erlaubt.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/world load</div>
+              <div class="command-syntax">/world load &lt;WeltName&gt;</div>
+              <div class="command-desc">L&auml;dt eine existierende Welt in den Server-Speicher.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/world unload</div>
+              <div class="command-syntax">/world unload &lt;WeltName&gt;</div>
+              <div class="command-desc">Entl&auml;dt eine Welt aus dem Speicher (ohne zu l&ouml;schen).</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/world delete</div>
+              <div class="command-syntax">/world delete &lt;WeltName&gt; --confirm</div>
+              <div class="command-desc">L&ouml;scht eine Welt permanent. Erfordert <code>--confirm</code> zur Best&auml;tigung.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/world list</div>
+              <div class="command-syntax">/world list</div>
+              <div class="command-desc">Zeigt alle verf&uuml;gbaren und geladenen Welten an.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
             <div class="command-card hytale-card">
               <div class="command-name">/world save</div>
               <div class="command-syntax">/world save</div>
               <div class="command-desc">Speichert alle Welten. Jede Welt hat ihre eigene Config unter <code>universe/worlds/</code>.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/world set-default</div>
+              <div class="command-syntax">/world set-default &lt;WeltName&gt;</div>
+              <div class="command-desc">Setzt die Standard-Spawn-Welt f&uuml;r neue Spieler.</div>
+              <div class="command-perm"><code>OP</code></div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/world settings</div>
+              <div class="command-syntax">/world settings.&lt;Option&gt; &lt;Wert&gt;</div>
+              <div class="command-desc">Welt-Einstellungen zur Laufzeit &auml;ndern: <code>gamemode</code>, <code>creativemode</code>, <code>blockticking</code>, <code>keeploaded</code>, <code>playersaving</code>, <code>daylightportion</code> u.v.m.</div>
               <div class="command-perm"><code>OP</code></div>
             </div>
 
@@ -1560,7 +1624,7 @@
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-hammer"></i></span>
           <h2>Builder Tools (Creative)</h2>
-          <span class="category-count">18</span>
+          <span class="category-count">21</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
         <div class="commands-grid-wrapper">
@@ -1680,6 +1744,26 @@
               <div class="command-name">/redo</div>
               <div class="command-syntax">/redo</div>
               <div class="command-desc">Stellt die letzte r&uuml;ckg&auml;ngig gemachte Aktion wieder her.</div>
+            </div>
+
+            <div class="commands-divider"><span>Prefabs &amp; Import</span></div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/prefab</div>
+              <div class="command-syntax">/prefab save &lt;Name&gt; | load | list | delete</div>
+              <div class="command-desc">Verwaltet Prefab-Strukturen. Speichern, laden, auflisten oder l&ouml;schen von vorgefertigten Bauwerken.</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/importimage</div>
+              <div class="command-syntax">/importimage &lt;Pfad&gt;</div>
+              <div class="command-desc">Importiert ein Bild und wandelt es in Bl&ouml;cke um (Pixel Art).</div>
+            </div>
+
+            <div class="command-card hytale-card">
+              <div class="command-name">/importobj</div>
+              <div class="command-syntax">/importobj &lt;Pfad&gt;</div>
+              <div class="command-desc">Importiert ein 3D-Modell (.obj) und wandelt es in Bl&ouml;cke um.</div>
             </div>
 
           </div>
