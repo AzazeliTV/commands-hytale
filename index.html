@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hytale Commands</title>
-  <meta name="description" content="Alle Spieler- und Admin-Befehle für den Hytale Survival Server. 136 Commands mit Syntax, Beschreibungen und Berechtigungen.">
+  <meta name="description" content="Alle Spieler- und Admin-Befehle für den Hytale Survival Server. Über 140 Commands aus 35+ Mods mit Syntax, Beschreibungen und Berechtigungen.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
@@ -19,9 +19,9 @@
       <h1>Hytale Commands</h1>
       <p class="subtitle">Hytale Survival Server &mdash; Alle Commands</p>
       <div class="hero-stats">
-        <span class="stat-item"><i class="fa-solid fa-terminal"></i> 58 Spieler-Befehle</span>
-        <span class="stat-item"><i class="fa-solid fa-shield-halved"></i> 78 Admin-Befehle</span>
-        <span class="stat-item"><i class="fa-solid fa-puzzle-piece"></i> 10 Mods</span>
+        <span class="stat-item"><i class="fa-solid fa-terminal"></i> 66 Spieler-Befehle</span>
+        <span class="stat-item"><i class="fa-solid fa-shield-halved"></i> 73 Admin-Befehle</span>
+        <span class="stat-item"><i class="fa-solid fa-puzzle-piece"></i> 35+ Mods</span>
       </div>
       <nav class="tab-nav">
         <button class="tab-btn active" data-tab="player"><i class="fa-solid fa-user"></i> Spieler</button>
@@ -51,12 +51,12 @@
         <p>Alle Befehle werden im Chat mit <code>/</code> eingegeben. Nutze <code>/help</code> im Spiel für den interaktiven Guide. Bei Fragen wende dich an einen Admin.</p>
       </div>
 
-      <!-- Teleportation -->
+      <!-- Teleportation (EliteEssentials) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-location-arrow"></i></span>
           <h2>Teleportation</h2>
-          <span class="category-count">13</span>
+          <span class="category-count">12</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
         <div class="commands-grid-wrapper">
@@ -131,25 +131,19 @@
             <div class="command-card">
               <div class="command-name">/rtp</div>
               <div class="command-syntax">/rtp</div>
-              <div class="command-desc">Teleportiert dich zu einer zufälligen Position in der Welt. Perfekt, um ein neues Gebiet zum Bauen zu finden. Reichweite abhängig vom Rang.</div>
-            </div>
-
-            <div class="command-card">
-              <div class="command-name">/autortp</div>
-              <div class="command-syntax">/autortp</div>
-              <div class="command-desc">Teleportiert dich automatisch zur maximal erlaubten Entfernung per Random Teleport.</div>
+              <div class="command-desc">Teleportiert dich zu einer zufälligen Position in der Welt. Perfekt, um ein neues Gebiet zum Bauen zu finden.</div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- Wirtschaft -->
+      <!-- Wirtschaft & Handel (EcotaleCoins, EcotaleMarket, BetterStore) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-coins"></i></span>
           <h2>Wirtschaft &amp; Handel</h2>
-          <span class="category-count">8</span>
+          <span class="category-count">7</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
         <div class="commands-grid-wrapper">
@@ -158,7 +152,7 @@
             <div class="command-card">
               <div class="command-name">/bal</div>
               <div class="command-syntax">/bal oder /money</div>
-              <div class="command-desc">Zeigt deinen aktuellen Kontostand an.</div>
+              <div class="command-desc">Zeigt deinen aktuellen Kontostand an (EcotaleCoins).</div>
             </div>
 
             <div class="command-card">
@@ -176,7 +170,7 @@
             <div class="command-card">
               <div class="command-name">/shop</div>
               <div class="command-syntax">/shop</div>
-              <div class="command-desc">Öffnet den Server-Shop als GUI-Menü. Hier kannst du Items kaufen und verkaufen.</div>
+              <div class="command-desc">Öffnet den Server-Shop als GUI-Menü (BetterStore). Hier kannst du Items kaufen und verkaufen.</div>
             </div>
 
             <div class="command-card">
@@ -194,25 +188,52 @@
             <div class="command-card">
               <div class="command-name">/ah</div>
               <div class="command-syntax">/ah oder /auction</div>
-              <div class="command-desc">Öffnet das globale Auktionshaus. Hier können Spieler Items untereinander handeln und versteigern.</div>
-            </div>
-
-            <div class="command-card">
-              <div class="command-name">/ranks</div>
-              <div class="command-syntax">/ranks oder /store</div>
-              <div class="command-desc">Öffnet das Rang-Shop-Menü oder zeigt den Link zum externen Store an.</div>
+              <div class="command-desc">Öffnet das Auktionshaus (EcotaleMarket). Hier können Spieler Items untereinander handeln und versteigern.</div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- Gameplay -->
+      <!-- Jobs (EcotaleJobs) -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-briefcase"></i></span>
+          <h2>Jobs</h2>
+          <span class="category-count">3</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card">
+              <div class="command-name">/job</div>
+              <div class="command-syntax">/job</div>
+              <div class="command-desc">Öffnet das Job-Auswahl-Menü (EcotaleJobs). Wähle einen Beruf, um durch bestimmte Aktivitäten extra Geld zu verdienen.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/jobs</div>
+              <div class="command-syntax">/jobs</div>
+              <div class="command-desc">Zeigt eine Übersicht aller verfügbaren Jobs und deinen aktuellen Job-Fortschritt an.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/jobinfo</div>
+              <div class="command-syntax">/jobinfo &lt;Job&gt;</div>
+              <div class="command-desc">Zeigt detaillierte Infos zu einem bestimmten Job: Verdienst, Stufen und Boni.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Gameplay & Kits (EliteEssentials, BetterLootBox) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-gamepad"></i></span>
-          <h2>Gameplay</h2>
-          <span class="category-count">7</span>
+          <h2>Gameplay &amp; Kits</h2>
+          <span class="category-count">5</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
         <div class="commands-grid-wrapper">
@@ -220,38 +241,26 @@
 
             <div class="command-card">
               <div class="command-name">/kit</div>
-              <div class="command-syntax">/kit</div>
-              <div class="command-desc">Öffnet das Kits-GUI-Menü. Hier siehst du alle verfügbaren Kits und kannst sie einlösen.</div>
+              <div class="command-syntax">/kit [Name]</div>
+              <div class="command-desc">Öffnet das Kits-GUI-Menü oder löst ein bestimmtes Kit direkt ein. Jedes Kit hat einen Cooldown.</div>
             </div>
 
             <div class="command-card">
-              <div class="command-name">/kit claim</div>
-              <div class="command-syntax">/kit claim &lt;Name&gt;</div>
-              <div class="command-desc">Löst ein bestimmtes Kit direkt per Befehl ein, ohne das GUI zu öffnen. Jedes Kit hat einen Cooldown.</div>
+              <div class="command-name">/crate</div>
+              <div class="command-syntax">/crate</div>
+              <div class="command-desc">Öffnet das Crate-Menü (BetterLootBox). Zeigt verfügbare Kisten und deine Keys an.</div>
             </div>
 
             <div class="command-card">
-              <div class="command-name">/job</div>
-              <div class="command-syntax">/job</div>
-              <div class="command-desc">Öffnet das Job-Auswahl-Menü. Wähle einen Beruf, um durch bestimmte Aktivitäten extra Geld zu verdienen.</div>
-            </div>
-
-            <div class="command-card">
-              <div class="command-name">/level</div>
-              <div class="command-syntax">/level</div>
-              <div class="command-desc">Öffnet das Level- und Belohnungs-Menü. Zeigt deinen Fortschritt und verfügbare Belohnungen an.</div>
+              <div class="command-name">/daily</div>
+              <div class="command-syntax">/daily</div>
+              <div class="command-desc">Öffnet das Menü für tägliche Belohnungen. Vergiss nicht, sie regelmäßig abzuholen!</div>
             </div>
 
             <div class="command-card">
               <div class="command-name">/pass</div>
               <div class="command-syntax">/pass oder /battlepass</div>
               <div class="command-desc">Öffnet den BattlePass. Sammle EXP, um Stufen freizuschalten und Belohnungen zu erhalten.</div>
-            </div>
-
-            <div class="command-card">
-              <div class="command-name">/daily</div>
-              <div class="command-syntax">/daily</div>
-              <div class="command-desc">Öffnet das Menü für zeitbasierte Belohnungen (stündlich, täglich, wöchentlich). Vergiss nicht, sie regelmäßig abzuholen!</div>
             </div>
 
             <div class="command-card">
@@ -264,12 +273,12 @@
         </div>
       </div>
 
-      <!-- Kommunikation -->
+      <!-- Kommunikation (EliteEssentials) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-comments"></i></span>
-          <h2>Kommunikation &amp; Soziales</h2>
-          <span class="category-count">5</span>
+          <h2>Kommunikation</h2>
+          <span class="category-count">4</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
         <div class="commands-grid-wrapper">
@@ -284,7 +293,7 @@
             <div class="command-card">
               <div class="command-name">/ignore</div>
               <div class="command-syntax">/ignore &lt;Spieler&gt;</div>
-              <div class="command-desc">Blendet alle Nachrichten von einem bestimmten Spieler aus. Erneut eingeben, um die Sperre aufzuheben.</div>
+              <div class="command-desc">Blendet alle Nachrichten von einem bestimmten Spieler aus. Erneut eingeben zum Aufheben.</div>
             </div>
 
             <div class="command-card">
@@ -299,17 +308,11 @@
               <div class="command-desc">Öffnet das Menü zum Ändern deiner Nickname-Farbe (verfügbare Farben abhängig vom Rang).</div>
             </div>
 
-            <div class="command-card">
-              <div class="command-name">/profile</div>
-              <div class="command-syntax">/profile</div>
-              <div class="command-desc">Zeigt dein Spielerprofil mit detaillierten Statistiken in einer GUI-Übersicht an.</div>
-            </div>
-
           </div>
         </div>
       </div>
 
-      <!-- Informationen -->
+      <!-- Informationen (EliteEssentials) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-circle-question"></i></span>
@@ -339,9 +342,9 @@
             </div>
 
             <div class="command-card">
-              <div class="command-name">/keys</div>
-              <div class="command-syntax">/keys</div>
-              <div class="command-desc">Zeigt Informationen zu Crate-Keys an und wie du sie erhalten kannst.</div>
+              <div class="command-name">/profile</div>
+              <div class="command-syntax">/profile [Spieler]</div>
+              <div class="command-desc">Zeigt dein Spielerprofil oder das eines anderen Spielers mit Statistiken an.</div>
             </div>
 
           </div>
@@ -362,7 +365,7 @@
             <div class="command-card">
               <div class="command-name">/sc</div>
               <div class="command-syntax">/sc oder /claim oder /claims</div>
-              <div class="command-desc">Öffnet das Claim-GUI mit Chunk-Karte, Trust-Verwaltung und Farbauswahl für deine Grundstücke.</div>
+              <div class="command-desc">Öffnet das Claim-GUI (SimpleClaims) mit Chunk-Karte, Trust-Verwaltung und Farbauswahl für deine Grundstücke.</div>
             </div>
 
             <div class="command-card">
@@ -413,11 +416,11 @@
         </div>
       </div>
 
-      <!-- Party System (PartyPro) -->
+      <!-- Party-System (partypro) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-users"></i></span>
-          <h2>Party-System (PartyPro)</h2>
+          <h2>Party-System</h2>
           <span class="category-count">4</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
@@ -427,7 +430,7 @@
             <div class="command-card">
               <div class="command-name">/p</div>
               <div class="command-syntax">/p oder /party</div>
-              <div class="command-desc">Öffnet das Party-GUI-Menü. Erstelle und verwalte Gruppen, lade Spieler ein, teleportiere dich zu Mitgliedern und teile EXP (2-16 Spieler).</div>
+              <div class="command-desc">Öffnet das Party-GUI-Menü (partypro). Erstelle Gruppen, lade Spieler ein, teleportiere dich zu Mitgliedern und teile EXP (2-16 Spieler).</div>
             </div>
 
             <div class="command-card">
@@ -452,11 +455,11 @@
         </div>
       </div>
 
-      <!-- Skills & Quests (MMO Skill Tree) -->
+      <!-- Skills & Leveling (RPGLeveling) -->
       <div class="category">
         <div class="category-header">
-          <span class="category-icon"><i class="fa-solid fa-wand-sparkles"></i></span>
-          <h2>Skills &amp; Quests</h2>
+          <span class="category-icon"><i class="fa-solid fa-chart-line"></i></span>
+          <h2>Skills &amp; Leveling</h2>
           <span class="category-count">3</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
@@ -464,21 +467,21 @@
           <div class="commands-grid">
 
             <div class="command-card">
-              <div class="command-name">/mmo</div>
-              <div class="command-syntax">/mmo oder /skilltree oder /skills oder /mmoxp</div>
-              <div class="command-desc">Öffnet den Skill-Tree mit deinem Fortschritt in allen 23 Fähigkeiten (Mining, Swords, Farming, Cooking, Alchemy usw.).</div>
+              <div class="command-name">/level</div>
+              <div class="command-syntax">/level</div>
+              <div class="command-desc">Zeigt dein aktuelles Level und deinen XP-Fortschritt an (RPGLeveling).</div>
             </div>
 
             <div class="command-card">
-              <div class="command-name">/quest</div>
-              <div class="command-syntax">/quest</div>
-              <div class="command-desc">Öffnet das Quest-Menü. Hier kannst du Quests annehmen, Fortschritt prüfen und Belohnungen einlösen.</div>
+              <div class="command-name">/skills</div>
+              <div class="command-syntax">/skills oder /skilltree</div>
+              <div class="command-desc">Öffnet den Skill-Tree mit deinem Fortschritt in allen Fähigkeiten (Mining, Combat, Farming, Cooking usw.).</div>
             </div>
 
             <div class="command-card">
-              <div class="command-name">/xpd</div>
-              <div class="command-syntax">/xpd &lt;Schwellenwert&gt;</div>
-              <div class="command-desc">Stellt ein, ab welchem XP-Wert die Benachrichtigung erscheint. <code>/xpd 10</code> zeigt nur Gewinne ab 10 XP. <code>/xpd 0</code> zeigt alles.</div>
+              <div class="command-name">/stats</div>
+              <div class="command-syntax">/stats [Spieler]</div>
+              <div class="command-desc">Zeigt deine RPG-Statistiken oder die eines anderen Spielers an.</div>
             </div>
 
           </div>
@@ -499,7 +502,7 @@
             <div class="command-card">
               <div class="command-name">/jet</div>
               <div class="command-syntax">/jet oder /j</div>
-              <div class="command-desc">Öffnet den Item- und Rezept-Browser. Durchsuche alle Items, sieh dir Crafting-Rezepte an und finde heraus, welche Materialien du brauchst. Alternativ: <code>Alt</code>-Taste.</div>
+              <div class="command-desc">Öffnet den Item- und Rezept-Browser (JET). Durchsuche alle Items und Crafting-Rezepte. Alternativ: <code>Alt</code>-Taste.</div>
             </div>
 
             <div class="command-card">
@@ -518,12 +521,12 @@
         </div>
       </div>
 
-      <!-- HUD & Anzeige (Blocchio) -->
+      <!-- HUD & Anzeige (Blocchio, MultipleHUD) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-eye"></i></span>
           <h2>HUD &amp; Anzeige</h2>
-          <span class="category-count">3</span>
+          <span class="category-count">4</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
         <div class="commands-grid-wrapper">
@@ -532,7 +535,7 @@
             <div class="command-card">
               <div class="command-name">/blocchio toggle</div>
               <div class="command-syntax">/blocchio toggle</div>
-              <div class="command-desc">Schaltet das Block- und Entity-Info-HUD ein oder aus. Zeigt dir Details zum Block/Mob, den du gerade anschaust.</div>
+              <div class="command-desc">Schaltet das Block- und Entity-Info-HUD ein oder aus (Blocchio). Zeigt Details zum Block/Mob, den du anschaust.</div>
             </div>
 
             <div class="command-card">
@@ -544,7 +547,112 @@
             <div class="command-card">
               <div class="command-name">/blocchio on / off</div>
               <div class="command-syntax">/blocchio on oder /blocchio off</div>
-              <div class="command-desc">Schaltet das HUD explizit ein oder aus (Alternative zu toggle).</div>
+              <div class="command-desc">Schaltet das Block-Info-HUD explizit ein oder aus.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/hud</div>
+              <div class="command-syntax">/hud</div>
+              <div class="command-desc">Öffnet die HUD-Einstellungen (MultipleHUD). Konfiguriere welche HUD-Elemente angezeigt werden sollen.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Reittiere (cali19's Traveling Mounts) -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-horse"></i></span>
+          <h2>Reittiere</h2>
+          <span class="category-count">2</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card">
+              <div class="command-name">/mount</div>
+              <div class="command-syntax">/mount</div>
+              <div class="command-desc">Öffnet das Reittier-Menü (Traveling Mounts). Wähle und beschwöre deine freigeschalteten Reittiere.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/mounts</div>
+              <div class="command-syntax">/mounts</div>
+              <div class="command-desc">Zeigt eine Übersicht aller verfügbaren Reittiere und deren Status (freigeschaltet/gesperrt).</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Musik & Radio (MediaRadio) -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-music"></i></span>
+          <h2>Musik &amp; Radio</h2>
+          <span class="category-count">2</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card">
+              <div class="command-name">/radio</div>
+              <div class="command-syntax">/radio</div>
+              <div class="command-desc">Öffnet den Radio-Player (MediaRadio). Wähle einen Sender und höre Musik direkt im Spiel.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/radio stop</div>
+              <div class="command-syntax">/radio stop</div>
+              <div class="command-desc">Stoppt die aktuelle Musikwiedergabe.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sonstiges (Simply-Trash, SimpleEnchantments, BetterMap, MajorDungeons, GravestonePlugin) -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-ellipsis"></i></span>
+          <h2>Sonstiges</h2>
+          <span class="category-count">5</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card">
+              <div class="command-name">/trash</div>
+              <div class="command-syntax">/trash</div>
+              <div class="command-desc">Öffnet einen Mülleimer (Simply-Trash). Lege ungewollte Items rein, um sie sicher zu entsorgen.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/enchant</div>
+              <div class="command-syntax">/enchant</div>
+              <div class="command-desc">Öffnet das Verzauberungs-Menü (SimpleEnchantments). Zeigt verfügbare Verzauberungen für dein gehaltenes Item.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/map</div>
+              <div class="command-syntax">/map</div>
+              <div class="command-desc">Öffnet die Weltkarte (BetterMap). Zeigt deine Position, Waypoints und erkundete Gebiete.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/dungeon</div>
+              <div class="command-syntax">/dungeon</div>
+              <div class="command-desc">Öffnet den Dungeon-Finder (MajorDungeons). Finde und betrete verfügbare Dungeons mit Loot und Bossen.</div>
+            </div>
+
+            <div class="command-card">
+              <div class="command-name">/graves</div>
+              <div class="command-syntax">/graves</div>
+              <div class="command-desc">Zeigt deine aktiven Grabsteine an (GravestonePlugin). Nach dem Tod spawnt ein Grabstein mit deinem Loot.</div>
             </div>
 
           </div>
@@ -563,50 +671,57 @@
         <p>Diese Befehle sind nur für Admins und Moderatoren mit entsprechenden Berechtigungen verfügbar. Missbrauch führt zum Entzug der Rechte.</p>
       </div>
 
-      <!-- Rang & Berechtigungen -->
+      <!-- Berechtigungen (LuckPerms) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-key"></i></span>
-          <h2>Rang &amp; Berechtigungen</h2>
-          <span class="category-count">4</span>
+          <h2>Berechtigungen (LuckPerms)</h2>
+          <span class="category-count">5</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
         <div class="commands-grid-wrapper">
           <div class="commands-grid">
 
             <div class="command-card admin-card">
-              <div class="command-name">/rank</div>
-              <div class="command-syntax">/rank</div>
-              <div class="command-desc">Hauptbefehl für die Rang- und Berechtigungsverwaltung.</div>
-              <div class="command-perm"><code>xqediicore.rank</code></div>
+              <div class="command-name">/lp</div>
+              <div class="command-syntax">/lp oder /luckperms</div>
+              <div class="command-desc">Hauptbefehl für LuckPerms. Zeigt alle verfügbaren Unterbefehle und Plugin-Infos.</div>
+              <div class="command-perm"><code>luckperms.*</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/rank user</div>
-              <div class="command-syntax">/rank user &lt;Spieler&gt; ...</div>
-              <div class="command-desc">Verwalte Ränge, temporäre Ränge und Berechtigungen für einzelne Spieler.</div>
-              <div class="command-perm"><code>xqediicore.rankuser</code></div>
+              <div class="command-name">/lp user</div>
+              <div class="command-syntax">/lp user &lt;Spieler&gt; info|permission|parent|meta</div>
+              <div class="command-desc">Verwalte Berechtigungen, Gruppen und Metadaten für einzelne Spieler.</div>
+              <div class="command-perm"><code>luckperms.user.*</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/rank group</div>
-              <div class="command-syntax">/rank group ...</div>
-              <div class="command-desc">Erstelle, lösche und verwalte Rang-Gruppen und deren Metadaten.</div>
-              <div class="command-perm"><code>xqediicore.rankgroup</code></div>
+              <div class="command-name">/lp group</div>
+              <div class="command-syntax">/lp group &lt;Gruppe&gt; info|permission|parent|meta</div>
+              <div class="command-desc">Verwalte Berechtigungen, Vererbung und Metadaten für Rang-Gruppen.</div>
+              <div class="command-perm"><code>luckperms.group.*</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/rank reload</div>
-              <div class="command-syntax">/rank reload</div>
-              <div class="command-desc">Lädt die <code>ranks.yml</code> Konfiguration neu.</div>
-              <div class="command-perm"><code>xqediicore.configreload</code></div>
+              <div class="command-name">/lp editor</div>
+              <div class="command-syntax">/lp editor</div>
+              <div class="command-desc">Öffnet den Web-Editor. Bearbeite alle Berechtigungen bequem im Browser und übertrage Änderungen zum Server.</div>
+              <div class="command-perm"><code>luckperms.editor</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/lp verbose</div>
+              <div class="command-syntax">/lp verbose on|off|record</div>
+              <div class="command-desc">Aktiviert den Verbose-Modus. Zeigt in Echtzeit, welche Permissions geprüft werden &mdash; ideal zum Debuggen.</div>
+              <div class="command-perm"><code>luckperms.verbose</code></div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- Region-Schutz -->
+      <!-- Region-Schutz (EliteEssentials) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-shield"></i></span>
@@ -621,84 +736,84 @@
               <div class="command-name">/rg</div>
               <div class="command-syntax">/rg oder /region</div>
               <div class="command-desc">Hauptbefehl für das Region-Schutzsystem. Verwalte geschützte Gebiete auf dem Server.</div>
-              <div class="command-perm"><code>xqediicore.region</code></div>
+              <div class="command-perm"><code>eliteessentials.region</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/pos1 &amp; /pos2</div>
               <div class="command-syntax">/pos1 und /pos2</div>
               <div class="command-desc">Setze den ersten und zweiten Auswahlpunkt für eine neue Region.</div>
-              <div class="command-perm"><code>xqediicore.regionpos1</code> / <code>regionpos2</code></div>
+              <div class="command-perm"><code>eliteessentials.region.pos</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/rg create</div>
               <div class="command-syntax">/rg create &lt;Name&gt;</div>
               <div class="command-desc">Erstellt eine neue geschützte Region aus der aktuellen Auswahl.</div>
-              <div class="command-perm"><code>xqediicore.regioncreate</code></div>
+              <div class="command-perm"><code>eliteessentials.region.create</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/rg delete</div>
               <div class="command-syntax">/rg delete &lt;Name&gt;</div>
               <div class="command-desc">Löscht eine geschützte Region dauerhaft.</div>
-              <div class="command-perm"><code>xqediicore.regiondelete</code></div>
+              <div class="command-perm"><code>eliteessentials.region.delete</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/rg flag</div>
               <div class="command-syntax">/rg flag &lt;Region&gt; &lt;Flag&gt; &lt;Wert&gt;</div>
               <div class="command-desc">Setzt Schutz-Flags wie PvP, Block-Break oder Interaktionen für eine Region.</div>
-              <div class="command-perm"><code>xqediicore.regionflags</code></div>
+              <div class="command-perm"><code>eliteessentials.region.flag</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/rg list</div>
               <div class="command-syntax">/rg list</div>
               <div class="command-desc">Zeigt eine Liste aller existierenden Regionen und deren Eigenschaften.</div>
-              <div class="command-perm"><code>xqediicore.regionlist</code></div>
+              <div class="command-perm"><code>eliteessentials.region.list</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/rg expand</div>
               <div class="command-syntax">/rg expand &lt;Richtung&gt; &lt;Blöcke&gt;</div>
               <div class="command-desc">Erweitert die aktuelle Auswahl in eine bestimmte Richtung.</div>
-              <div class="command-perm"><code>xqediicore.regionexpand</code></div>
+              <div class="command-perm"><code>eliteessentials.region.expand</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/rg redefine</div>
               <div class="command-syntax">/rg redefine &lt;Name&gt;</div>
               <div class="command-desc">Aktualisiert die Grenzen einer bestehenden Region basierend auf der neuen Auswahl.</div>
-              <div class="command-perm"><code>xqediicore.regionredefine</code></div>
+              <div class="command-perm"><code>eliteessentials.region.redefine</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/rg tint</div>
               <div class="command-syntax">/rg tint &lt;HexFarbe&gt;</div>
               <div class="command-desc">Färbt Chunks innerhalb der Auswahl mit einer visuellen Hex-Farbe ein.</div>
-              <div class="command-perm"><code>xqediicore.regiontint</code></div>
+              <div class="command-perm"><code>eliteessentials.region.tint</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/rg priority</div>
               <div class="command-syntax">/rg priority &lt;Region&gt; &lt;Zahl&gt;</div>
               <div class="command-desc">Setzt die Priorität einer Region für Überlappungen.</div>
-              <div class="command-perm"><code>xqediicore.regionpriority</code></div>
+              <div class="command-perm"><code>eliteessentials.region.priority</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/posclear</div>
               <div class="command-syntax">/posclear</div>
               <div class="command-desc">Löscht die aktuellen Region-Auswahlpunkte.</div>
-              <div class="command-perm"><code>xqediicore.regionposclear</code></div>
+              <div class="command-perm"><code>eliteessentials.region.posclear</code></div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- Wirtschaft Admin -->
+      <!-- Wirtschaft Admin (EcotaleCoins) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-vault"></i></span>
@@ -712,22 +827,22 @@
             <div class="command-card admin-card">
               <div class="command-name">/eco</div>
               <div class="command-syntax">/eco give|take|set &lt;Spieler&gt; &lt;Betrag&gt;</div>
-              <div class="command-desc">Administrative Kontrolle über die Wirtschaft. Gib, nimm oder setze den Kontostand von Spielern.</div>
-              <div class="command-perm"><code>xqediicore.eco</code></div>
+              <div class="command-desc">Administrative Kontrolle über die Wirtschaft (EcotaleCoins). Gib, nimm oder setze den Kontostand von Spielern.</div>
+              <div class="command-perm"><code>ecotale.admin.eco</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/shop reload</div>
               <div class="command-syntax">/shop reload</div>
-              <div class="command-desc">Lädt die Shop-Konfiguration und Item-Dateien neu.</div>
-              <div class="command-perm"><code>xqediicore.shop.reload</code></div>
+              <div class="command-desc">Lädt die Shop-Konfiguration und Item-Dateien von BetterStore neu.</div>
+              <div class="command-perm"><code>betterstore.admin.reload</code></div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- Welt-Verwaltung -->
+      <!-- Welt-Verwaltung (EliteEssentials, PortalWorld) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-globe"></i></span>
@@ -742,182 +857,67 @@
               <div class="command-name">/setspawn</div>
               <div class="command-syntax">/setspawn</div>
               <div class="command-desc">Setzt den globalen Spawnpunkt auf deine aktuelle Position.</div>
-              <div class="command-perm"><code>xqediicore.spawn.setspawn</code></div>
+              <div class="command-perm"><code>eliteessentials.setspawn</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/setwarp</div>
               <div class="command-syntax">/setwarp &lt;Name&gt;</div>
               <div class="command-desc">Erstellt einen neuen öffentlichen Warp-Punkt an deiner Position.</div>
-              <div class="command-perm"><code>xqediicore.setwarp</code></div>
+              <div class="command-perm"><code>eliteessentials.setwarp</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/delwarp</div>
               <div class="command-syntax">/delwarp &lt;Name&gt;</div>
               <div class="command-desc">Löscht einen bestehenden Warp-Punkt.</div>
-              <div class="command-perm"><code>xqediicore.delwarp</code></div>
+              <div class="command-perm"><code>eliteessentials.delwarp</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/gamerule</div>
               <div class="command-syntax">/gamerule &lt;Regel&gt; &lt;Wert&gt;</div>
-              <div class="command-desc">Setzt und verwaltet benutzerdefinierte Spielregeln für die aktuelle Welt.</div>
-              <div class="command-perm"><code>xqediicore.gamerule</code></div>
+              <div class="command-desc">Setzt Spielregeln für die aktuelle Welt.</div>
+              <div class="command-perm"><code>eliteessentials.gamerule</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/day &amp; /night</div>
               <div class="command-syntax">/day oder /night</div>
               <div class="command-desc">Setzt die Tageszeit schnell auf Tag oder Nacht.</div>
-              <div class="command-perm"><code>xqediicore.time</code></div>
+              <div class="command-perm"><code>eliteessentials.time</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/mv create</div>
-              <div class="command-syntax">/mv create &lt;Name&gt; [Optionen]</div>
-              <div class="command-desc">Erstellt eine neue Welt, einschließlich Void-Welten.</div>
-              <div class="command-perm"><code>xqediicore.mvcreate</code></div>
+              <div class="command-name">/portal create</div>
+              <div class="command-syntax">/portal create &lt;Name&gt; &lt;Zielwelt&gt;</div>
+              <div class="command-desc">Erstellt ein Portal zu einer anderen Welt an deiner Position (PortalWorld).</div>
+              <div class="command-perm"><code>portalworld.admin.create</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/mv tp</div>
-              <div class="command-syntax">/mv tp &lt;Welt&gt;</div>
-              <div class="command-desc">Teleportiert dich in eine andere Welt.</div>
-              <div class="command-perm"><code>xqediicore.mvtp</code></div>
+              <div class="command-name">/portal list</div>
+              <div class="command-syntax">/portal list</div>
+              <div class="command-desc">Zeigt alle registrierten Portale und ihre Verbindungen an.</div>
+              <div class="command-perm"><code>portalworld.admin.list</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/mv info &amp; /mv list</div>
-              <div class="command-syntax">/mv info oder /mv list</div>
-              <div class="command-desc">Zeigt technische Welt-Infos (Entities, Chunks) oder alle registrierten Welten an.</div>
-              <div class="command-perm"><code>xqediicore.mvinfo</code> / <code>xqediicore.mvlist</code></div>
+              <div class="command-name">/portal delete</div>
+              <div class="command-syntax">/portal delete &lt;Name&gt;</div>
+              <div class="command-desc">Löscht ein bestehendes Portal dauerhaft.</div>
+              <div class="command-perm"><code>portalworld.admin.delete</code></div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- Entities & NPCs -->
+      <!-- Entities & Holograms (HydroHologram, EliteEssentials) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-person"></i></span>
-          <h2>Entities &amp; NPCs</h2>
-          <span class="category-count">4</span>
-          <i class="fa-solid fa-chevron-down category-chevron"></i>
-        </div>
-        <div class="commands-grid-wrapper">
-          <div class="commands-grid">
-
-            <div class="command-card admin-card">
-              <div class="command-name">/xqnpc</div>
-              <div class="command-syntax">/xqnpc oder /citizen</div>
-              <div class="command-desc">Erstelle und verwalte Server-NPCs mit verschiedenen Interaktionen.</div>
-              <div class="command-perm"><code>xqediicore.npc</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/summon</div>
-              <div class="command-syntax">/summon &lt;Entity&gt;</div>
-              <div class="command-desc">Beschwört Entities und Mobs mit Namensvorschlägen.</div>
-              <div class="command-perm"><code>xqediicore.summon</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/holo</div>
-              <div class="command-syntax">/holo create|edit|delete ...</div>
-              <div class="command-desc">Erstelle und verwalte schwebende Texthologramme.</div>
-              <div class="command-perm"><code>xqediicore.hologram</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/killall</div>
-              <div class="command-syntax">/killall [Typ] oder /kill &lt;Spieler&gt;</div>
-              <div class="command-desc">Entfernt Entities, Items, NPCs oder Spieler.</div>
-              <div class="command-perm"><code>xqediicore.kill</code></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Kits & Crates -->
-      <div class="category">
-        <div class="category-header">
-          <span class="category-icon"><i class="fa-solid fa-gift"></i></span>
-          <h2>Kits &amp; Crates</h2>
-          <span class="category-count">4</span>
-          <i class="fa-solid fa-chevron-down category-chevron"></i>
-        </div>
-        <div class="commands-grid-wrapper">
-          <div class="commands-grid">
-
-            <div class="command-card admin-card">
-              <div class="command-name">/kit create</div>
-              <div class="command-syntax">/kit create &lt;Name&gt;</div>
-              <div class="command-desc">Erstellt ein neues Kit basierend auf deinem aktuellen Inventar.</div>
-              <div class="command-perm"><code>xqediicore.kit.create</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/kit edit &amp; delete</div>
-              <div class="command-syntax">/kit edit &lt;Name&gt; oder /kit delete &lt;Name&gt;</div>
-              <div class="command-desc">Bearbeitet den Inhalt oder löscht ein Kit dauerhaft.</div>
-              <div class="command-perm"><code>xqediicore.kit.edit</code> / <code>xqediicore.kit.delete</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/crates</div>
-              <div class="command-syntax">/crates ...</div>
-              <div class="command-desc">Umfassende Verwaltung des Crate-Systems.</div>
-              <div class="command-perm"><code>xqediicore.crates</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/admincrate</div>
-              <div class="command-syntax">/admincrate &lt;Spieler&gt; &lt;Crate&gt; &lt;Anzahl&gt;</div>
-              <div class="command-desc">Gibt Spielern Crate-Keys per Admin-Befehl.</div>
-              <div class="command-perm"><code>xqediicore.admincrate</code></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Level & BattlePass Admin -->
-      <div class="category">
-        <div class="category-header">
-          <span class="category-icon"><i class="fa-solid fa-star"></i></span>
-          <h2>Level &amp; BattlePass (Admin)</h2>
-          <span class="category-count">2</span>
-          <i class="fa-solid fa-chevron-down category-chevron"></i>
-        </div>
-        <div class="commands-grid-wrapper">
-          <div class="commands-grid">
-
-            <div class="command-card admin-card">
-              <div class="command-name">/adminlevel</div>
-              <div class="command-syntax">/adminlevel &lt;Spieler&gt; ...</div>
-              <div class="command-desc">Administrative Kontrolle über Spieler-Level (setzen, zurücksetzen).</div>
-              <div class="command-perm"><code>xqediicore.level.admin</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/exp</div>
-              <div class="command-syntax">/exp &lt;give|set|take&gt; &lt;Spieler&gt; &lt;Menge&gt;</div>
-              <div class="command-desc">Administrative Kontrolle über Spieler-EXP (geben, setzen, nehmen).</div>
-              <div class="command-perm"><code>xqediicore.exp.admin</code></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Server-Konfiguration -->
-      <div class="category">
-        <div class="category-header">
-          <span class="category-icon"><i class="fa-solid fa-gear"></i></span>
-          <h2>Server-Konfiguration</h2>
+          <h2>Entities &amp; Holograms</h2>
           <span class="category-count">5</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
@@ -925,38 +925,38 @@
           <div class="commands-grid">
 
             <div class="command-card admin-card">
-              <div class="command-name">/xqcore</div>
-              <div class="command-syntax">/xqcore oder /xqsetup oder /config</div>
-              <div class="command-desc">Zugang zur Hauptkonfiguration und Setup-Befehlen des Plugins.</div>
-              <div class="command-perm"><code>xqediicore.setup</code></div>
+              <div class="command-name">/holo create</div>
+              <div class="command-syntax">/holo create &lt;Name&gt; &lt;Text&gt;</div>
+              <div class="command-desc">Erstellt ein schwebendes Texthologramm an deiner Position (HydroHologram).</div>
+              <div class="command-perm"><code>hydrohologram.admin</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/xqcore reload</div>
-              <div class="command-syntax">/xqcore reload</div>
-              <div class="command-desc">Lädt alle Plugin-Konfigurationsdateien und Daten neu.</div>
-              <div class="command-perm"><code>xqediicore.corereload</code></div>
+              <div class="command-name">/holo edit</div>
+              <div class="command-syntax">/holo edit &lt;Name&gt; &lt;Zeile&gt; &lt;Text&gt;</div>
+              <div class="command-desc">Bearbeitet den Text einer bestehenden Hologramm-Zeile.</div>
+              <div class="command-perm"><code>hydrohologram.admin</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/xqedii</div>
-              <div class="command-syntax">/xqedii</div>
-              <div class="command-desc">Zeigt Plugin-Informationen und Version an.</div>
-              <div class="command-perm"><code>xqediicore.info</code></div>
+              <div class="command-name">/holo delete</div>
+              <div class="command-syntax">/holo delete &lt;Name&gt;</div>
+              <div class="command-desc">Löscht ein Hologramm dauerhaft.</div>
+              <div class="command-perm"><code>hydrohologram.admin</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/rg reload</div>
-              <div class="command-syntax">/rg reload</div>
-              <div class="command-desc">Lädt alle Region-Daten und Flags von der Festplatte neu.</div>
-              <div class="command-perm"><code>xqediicore.regionreload</code></div>
+              <div class="command-name">/summon</div>
+              <div class="command-syntax">/summon &lt;Entity&gt;</div>
+              <div class="command-desc">Beschwört Entities und Mobs an deiner Position.</div>
+              <div class="command-perm"><code>eliteessentials.summon</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/bp</div>
-              <div class="command-syntax">/bp ...</div>
-              <div class="command-desc">Verwalte zeitgesteuerte Block-Partikeleffekte an bestimmten Positionen.</div>
-              <div class="command-perm"><code>xqediicore.bp</code></div>
+              <div class="command-name">/killall</div>
+              <div class="command-syntax">/killall [Typ]</div>
+              <div class="command-desc">Entfernt alle Entities eines bestimmten Typs oder alle Items auf dem Boden.</div>
+              <div class="command-perm"><code>eliteessentials.killall</code></div>
             </div>
 
           </div>
@@ -1034,11 +1034,11 @@
         </div>
       </div>
 
-      <!-- Grabsteine -->
+      <!-- Grabsteine (GravestonePlugin) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-cross"></i></span>
-          <h2>Grabsteine</h2>
+          <h2>Grabsteine (Admin)</h2>
           <span class="category-count">5</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
@@ -1049,42 +1049,42 @@
               <div class="command-name">/gravestone</div>
               <div class="command-syntax">/gravestone</div>
               <div class="command-desc">Zeigt alle aktuellen Grabstein-Einstellungen und verfügbaren Unterbefehle an.</div>
-              <div class="command-perm">Admin</div>
+              <div class="command-perm"><code>gravestone.admin</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/gsmodel</div>
               <div class="command-syntax">/gsmodel</div>
               <div class="command-desc">Wechselt zwischen dem Custom-Grabstein-Modell und dem Vanilla-Stil.</div>
-              <div class="command-perm">Admin</div>
+              <div class="command-perm"><code>gravestone.admin</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/gslimit</div>
               <div class="command-syntax">/gslimit &lt;Anzahl&gt;</div>
               <div class="command-desc">Begrenzt die maximale Anzahl an Grabsteinen pro Spieler.</div>
-              <div class="command-perm">Admin</div>
+              <div class="command-perm"><code>gravestone.admin</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/gsprotection</div>
               <div class="command-syntax">/gsprotection</div>
               <div class="command-desc">Schaltet den Besitzer-Schutz ein/aus. Wenn aktiv, kann nur der Besitzer seinen Grabstein öffnen.</div>
-              <div class="command-perm">Admin</div>
+              <div class="command-perm"><code>gravestone.admin</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/gstimer</div>
               <div class="command-syntax">/gstimer &lt;Minuten&gt;</div>
               <div class="command-desc">Setzt den Auto-Break-Timer. Grabstein zerfällt automatisch nach gesetzter Zeit. <code>0</code> = deaktiviert.</div>
-              <div class="command-perm">Admin</div>
+              <div class="command-perm"><code>gravestone.admin</code></div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- Claims Admin -->
+      <!-- Claims Admin (SimpleClaims) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-map-location-dot"></i></span>
@@ -1099,152 +1099,67 @@
               <div class="command-name">/scp admin-party-list</div>
               <div class="command-syntax">/scp admin-party-list</div>
               <div class="command-desc">Öffnet ein GUI mit allen Claim-Parties. Ermöglicht Bearbeitung und Auswahl für Admin-Befehle.</div>
-              <div class="command-perm"><code>simpleclaims.admin.admin-party-list</code></div>
+              <div class="command-perm"><code>simpleclaims.admin.party-list</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/sc admin-claim</div>
               <div class="command-syntax">/sc admin-claim</div>
               <div class="command-desc">Beansprucht den aktuellen Chunk für die ausgewählte Admin-Party.</div>
-              <div class="command-perm"><code>simpleclaims.admin.admin-claim</code></div>
+              <div class="command-perm"><code>simpleclaims.admin.claim</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/sc admin-unclaim</div>
               <div class="command-syntax">/sc admin-unclaim</div>
               <div class="command-desc">Entfernt den Claim des aktuellen Chunks (egal welche Party).</div>
-              <div class="command-perm"><code>simpleclaims.admin.admin-unclaim</code></div>
+              <div class="command-perm"><code>simpleclaims.admin.unclaim</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/scp admin-override</div>
               <div class="command-syntax">/scp admin-override</div>
               <div class="command-desc">Schaltet Claim-Schutz für dich ein/aus. Du ignorierst alle Chunk-Schutzregeln.</div>
-              <div class="command-perm"><code>simpleclaims.admin.admin-override</code></div>
+              <div class="command-perm"><code>simpleclaims.admin.override</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/scp admin-create</div>
               <div class="command-syntax">/scp admin-create</div>
               <div class="command-desc">Erstellt eine Party ohne Besitzer für administrative Zwecke.</div>
-              <div class="command-perm"><code>simpleclaims.admin.admin-create-party</code></div>
+              <div class="command-perm"><code>simpleclaims.admin.create-party</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/scp admin-modify-chunk</div>
               <div class="command-syntax">/scp admin-modify-chunk</div>
               <div class="command-desc">Ändert das Chunk-Limit der über admin-party-list ausgewählten Party.</div>
-              <div class="command-perm"><code>simpleclaims.admin.admin-modify-chunk</code></div>
+              <div class="command-perm"><code>simpleclaims.admin.modify-chunk</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/scp admin-modify-chunk-all</div>
               <div class="command-syntax">/scp admin-modify-chunk-all &lt;Anzahl&gt;</div>
               <div class="command-desc">Ändert das Chunk-Limit für ALLE existierenden Parties gleichzeitig.</div>
-              <div class="command-perm"><code>simpleclaims.admin.admin-modify-chunk-all</code></div>
+              <div class="command-perm"><code>simpleclaims.admin.modify-chunk-all</code></div>
             </div>
 
             <div class="command-card admin-card">
               <div class="command-name">/scp add-chunk-amount</div>
               <div class="command-syntax">/scp add-chunk-amount &lt;Spieler&gt; &lt;Anzahl&gt;</div>
               <div class="command-desc">Erhöht oder verringert das Chunk-Limit eines Spielers. Negative Werte möglich.</div>
-              <div class="command-perm"><code>simpleclaims.admin.add-chunk-amount</code></div>
+              <div class="command-perm"><code>simpleclaims.admin.add-chunk</code></div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- MMO Skill Tree Admin -->
+      <!-- RPG & Leveling Admin (RPGLeveling) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-wand-sparkles"></i></span>
-          <h2>MMO Skill Tree (Admin)</h2>
-          <span class="category-count">10</span>
-          <i class="fa-solid fa-chevron-down category-chevron"></i>
-        </div>
-        <div class="commands-grid-wrapper">
-          <div class="commands-grid">
-
-            <div class="command-card admin-card">
-              <div class="command-name">/mmoadmin</div>
-              <div class="command-syntax">/mmoadmin</div>
-              <div class="command-desc">Öffnet das visuelle Admin-Dashboard. Verwalte XP-Werte, Leveling-Speed, Belohnungen, Sprachen, Skill-Trees und Einstellungen.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/setmmoxp</div>
-              <div class="command-syntax">/setmmoxp &lt;Skill&gt; &lt;Wert&gt; --target=&lt;Spieler&gt;</div>
-              <div class="command-desc">Setzt die XP eines Skills für einen Spieler. Nutze <code>all</code> als Skill um alle gleichzeitig zu setzen.</div>
-              <div class="command-perm"><code>mmoskilltree.command.setxp.others</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/bulksetxp</div>
-              <div class="command-syntax">/bulksetxp</div>
-              <div class="command-desc">Massen-XP-Änderungen. Änderungen werden für Offline-Spieler in die Warteschlange gestellt. <code>*</code> für alle Spieler.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/mmoboost give</div>
-              <div class="command-syntax">/mmoboost give|&lt;Spieler&gt;|&lt;Skill&gt;|&lt;Multi&gt;|&lt;Dauer&gt;</div>
-              <div class="command-desc">Gibt einem Spieler einen persönlichen XP-Boost-Token. Optional <code>--quantity=5</code> für mehrere.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/mmoboost global</div>
-              <div class="command-syntax">/mmoboost global|&lt;Skill&gt;|&lt;Multi&gt;|&lt;Dauer&gt;</div>
-              <div class="command-desc">Aktiviert einen serverweiten globalen XP-Boost für einen bestimmten Skill.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/mmoconfig reload</div>
-              <div class="command-syntax">/mmoconfig reload</div>
-              <div class="command-desc">Lädt die MMO-Konfiguration neu und aktualisiert Stat-Boni für alle Online-Spieler.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/mmoconfig reloaddefaults</div>
-              <div class="command-syntax">/mmoconfig reloaddefaults</div>
-              <div class="command-desc">Setzt ALLE XP-Werte und Configs auf die Standard-Werte zurück. Nützlich nach einem Update.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/mmoconfig resetrewards</div>
-              <div class="command-syntax">/mmoconfig resetrewards --args=&lt;Spieler&gt;</div>
-              <div class="command-desc">Setzt alle eingelösten Item-Belohnungen eines Spielers zurück. Der Spieler kann sie erneut einlösen.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/mmoconfig basexp &amp; scale</div>
-              <div class="command-syntax">/mmoconfig basexp --args=&lt;Wert&gt; oder /mmoconfig scale --args=&lt;Wert&gt;</div>
-              <div class="command-desc">Ändert die Basis-XP oder den Skalierungsfaktor der Leveling-Formel. Zeigt danach XP-Anforderungen für Meilenstein-Level.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-            <div class="command-card admin-card">
-              <div class="command-name">/mmoquestadmin</div>
-              <div class="command-syntax">/mmoquestadmin</div>
-              <div class="command-desc">Admin-Quest-Verwaltung: Config neu laden, Quests vergeben, Fortschritt zurücksetzen oder Quests abschließen.</div>
-              <div class="command-perm"><code>mmoskilltree.command.*</code></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Mod-Updates -->
-      <div class="category">
-        <div class="category-header">
-          <span class="category-icon"><i class="fa-solid fa-arrows-rotate"></i></span>
-          <h2>Mod-Updates (nyoUpdates)</h2>
+          <h2>RPG &amp; Leveling (Admin)</h2>
           <span class="category-count">5</span>
           <i class="fa-solid fa-chevron-down category-chevron"></i>
         </div>
@@ -1252,45 +1167,153 @@
           <div class="commands-grid">
 
             <div class="command-card admin-card">
-              <div class="command-name">/updates check</div>
-              <div class="command-syntax">/updates check</div>
-              <div class="command-desc">Prüft alle installierten Mods auf verfügbare Updates über die CurseForge-API.</div>
-              <div class="command-perm"><code>nyoupdates.base</code></div>
+              <div class="command-name">/rpgadmin</div>
+              <div class="command-syntax">/rpgadmin</div>
+              <div class="command-desc">Öffnet das Admin-Dashboard für RPGLeveling. Verwalte XP-Werte, Leveling-Speed und Belohnungen.</div>
+              <div class="command-perm"><code>rpgleveling.admin</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/updates enable</div>
-              <div class="command-syntax">/updates enable</div>
-              <div class="command-desc">Aktiviert automatische Mod-Updates bei Serverstart.</div>
-              <div class="command-perm"><code>nyoupdates.base</code></div>
+              <div class="command-name">/rpgadmin setlevel</div>
+              <div class="command-syntax">/rpgadmin setlevel &lt;Spieler&gt; &lt;Level&gt;</div>
+              <div class="command-desc">Setzt das Level eines Spielers auf einen bestimmten Wert.</div>
+              <div class="command-perm"><code>rpgleveling.admin.setlevel</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/updates disable</div>
-              <div class="command-syntax">/updates disable</div>
-              <div class="command-desc">Deaktiviert einen Mod. Gesperrte Dateien werden zu <code>.disabled</code> umbenannt.</div>
-              <div class="command-perm"><code>nyoupdates.base</code></div>
+              <div class="command-name">/rpgadmin setxp</div>
+              <div class="command-syntax">/rpgadmin setxp &lt;Spieler&gt; &lt;Skill&gt; &lt;Wert&gt;</div>
+              <div class="command-desc">Setzt die XP eines Skills für einen Spieler. Nutze <code>all</code> als Skill um alle gleichzeitig zu setzen.</div>
+              <div class="command-perm"><code>rpgleveling.admin.setxp</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/updates mapping add</div>
-              <div class="command-syntax">/updates mapping add &lt;ID|Name&gt; &lt;CurseForge-URL&gt;</div>
-              <div class="command-desc">Fügt eine CurseForge-Zuordnung für einen Mod hinzu, damit Updates korrekt erkannt werden.</div>
-              <div class="command-perm"><code>nyoupdates.base</code></div>
+              <div class="command-name">/rpgadmin reset</div>
+              <div class="command-syntax">/rpgadmin reset &lt;Spieler&gt;</div>
+              <div class="command-desc">Setzt alle Skills und Level eines Spielers auf 0 zurück.</div>
+              <div class="command-perm"><code>rpgleveling.admin.reset</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/updates debug check</div>
-              <div class="command-syntax">/updates debug check</div>
-              <div class="command-desc">Ausführliche Update-Prüfung mit Versionsvergleich und detailliertem Ergebnis pro Mod.</div>
-              <div class="command-perm"><code>nyoupdates.base</code></div>
+              <div class="command-name">/rpgadmin reload</div>
+              <div class="command-syntax">/rpgadmin reload</div>
+              <div class="command-desc">Lädt die RPGLeveling-Konfiguration neu.</div>
+              <div class="command-perm"><code>rpgleveling.admin.reload</code></div>
             </div>
 
           </div>
         </div>
       </div>
 
-      <!-- Scoreboard -->
+      <!-- Anti-Cheat (OrbisGuard) -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-eye-slash"></i></span>
+          <h2>Anti-Cheat (OrbisGuard)</h2>
+          <span class="category-count">3</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card admin-card">
+              <div class="command-name">/og</div>
+              <div class="command-syntax">/og oder /orbisguard</div>
+              <div class="command-desc">Hauptbefehl für OrbisGuard. Zeigt Status, erkannte Cheats und Konfiguration.</div>
+              <div class="command-perm"><code>orbisguard.admin</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/og alerts</div>
+              <div class="command-syntax">/og alerts</div>
+              <div class="command-desc">Schaltet Anti-Cheat-Benachrichtigungen im Chat ein oder aus.</div>
+              <div class="command-perm"><code>orbisguard.admin.alerts</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/og reload</div>
+              <div class="command-syntax">/og reload</div>
+              <div class="command-desc">Lädt die OrbisGuard-Konfiguration und Erkennungsregeln neu.</div>
+              <div class="command-perm"><code>orbisguard.admin.reload</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat-Spiele (ChatBrawl) -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-dice"></i></span>
+          <h2>Chat-Spiele (ChatBrawl)</h2>
+          <span class="category-count">2</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card admin-card">
+              <div class="command-name">/chatbrawl start</div>
+              <div class="command-syntax">/chatbrawl start [Spieltyp]</div>
+              <div class="command-desc">Startet manuell ein Chat-Spiel (Quiz, Scramble, Math usw.). Ohne Typ wird ein zufälliges gewählt.</div>
+              <div class="command-perm"><code>chatbrawl.admin</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/chatbrawl reload</div>
+              <div class="command-syntax">/chatbrawl reload</div>
+              <div class="command-desc">Lädt die ChatBrawl-Konfiguration, Fragen und Belohnungen neu.</div>
+              <div class="command-perm"><code>chatbrawl.admin.reload</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Kits & Crates Admin -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-gift"></i></span>
+          <h2>Kits &amp; Crates (Admin)</h2>
+          <span class="category-count">4</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card admin-card">
+              <div class="command-name">/kit create</div>
+              <div class="command-syntax">/kit create &lt;Name&gt;</div>
+              <div class="command-desc">Erstellt ein neues Kit basierend auf deinem aktuellen Inventar.</div>
+              <div class="command-perm"><code>eliteessentials.kit.create</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/kit edit &amp; delete</div>
+              <div class="command-syntax">/kit edit &lt;Name&gt; oder /kit delete &lt;Name&gt;</div>
+              <div class="command-desc">Bearbeitet den Inhalt oder löscht ein Kit dauerhaft.</div>
+              <div class="command-perm"><code>eliteessentials.kit.edit</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/crate create</div>
+              <div class="command-syntax">/crate create &lt;Name&gt;</div>
+              <div class="command-desc">Erstellt eine neue Crate mit dem BetterLootBox-System.</div>
+              <div class="command-perm"><code>betterlootbox.admin.create</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/crate givekey</div>
+              <div class="command-syntax">/crate givekey &lt;Spieler&gt; &lt;Crate&gt; &lt;Anzahl&gt;</div>
+              <div class="command-desc">Gibt einem Spieler Crate-Keys per Admin-Befehl.</div>
+              <div class="command-perm"><code>betterlootbox.admin.givekey</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Scoreboard (WiFlowScoreboard) -->
       <div class="category">
         <div class="category-header">
           <span class="category-icon"><i class="fa-solid fa-chart-simple"></i></span>
@@ -1304,15 +1327,130 @@
             <div class="command-card admin-card">
               <div class="command-name">/sb reload</div>
               <div class="command-syntax">/sb reload</div>
-              <div class="command-desc">Lädt die Scoreboard-Konfiguration neu (WiFlow's Scoreboard). Sofort sichtbar ohne Serverneustart.</div>
-              <div class="command-perm">Admin</div>
+              <div class="command-desc">Lädt die Scoreboard-Konfiguration neu (WiFlowScoreboard). Sofort sichtbar ohne Serverneustart.</div>
+              <div class="command-perm"><code>wiflow.scoreboard.reload</code></div>
             </div>
 
             <div class="command-card admin-card">
-              <div class="command-name">/scoreboard add</div>
-              <div class="command-syntax">/scoreboard add</div>
-              <div class="command-desc">Öffnet den Scoreboard-Editor zum Verwalten der Inhalte (Better Scoreboard).</div>
-              <div class="command-perm"><code>betterscoreboard.editor</code></div>
+              <div class="command-name">/sb toggle</div>
+              <div class="command-syntax">/sb toggle [Spieler]</div>
+              <div class="command-desc">Schaltet das Scoreboard für einen bestimmten Spieler ein oder aus.</div>
+              <div class="command-perm"><code>wiflow.scoreboard.toggle</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mod-Updates (NyoUpdates) -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-arrows-rotate"></i></span>
+          <h2>Mod-Updates (NyoUpdates)</h2>
+          <span class="category-count">5</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card admin-card">
+              <div class="command-name">/updates check</div>
+              <div class="command-syntax">/updates check</div>
+              <div class="command-desc">Prüft alle installierten Mods auf verfügbare Updates über die CurseForge-API.</div>
+              <div class="command-perm"><code>nyoupdates.admin</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/updates enable</div>
+              <div class="command-syntax">/updates enable</div>
+              <div class="command-desc">Aktiviert automatische Mod-Updates bei Serverstart.</div>
+              <div class="command-perm"><code>nyoupdates.admin</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/updates disable</div>
+              <div class="command-syntax">/updates disable</div>
+              <div class="command-desc">Deaktiviert einen Mod. Gesperrte Dateien werden zu <code>.disabled</code> umbenannt.</div>
+              <div class="command-perm"><code>nyoupdates.admin</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/updates mapping add</div>
+              <div class="command-syntax">/updates mapping add &lt;ID|Name&gt; &lt;CurseForge-URL&gt;</div>
+              <div class="command-desc">Fügt eine CurseForge-Zuordnung für einen Mod hinzu, damit Updates korrekt erkannt werden.</div>
+              <div class="command-perm"><code>nyoupdates.admin</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/updates debug check</div>
+              <div class="command-syntax">/updates debug check</div>
+              <div class="command-desc">Ausführliche Update-Prüfung mit Versionsvergleich und detailliertem Ergebnis pro Mod.</div>
+              <div class="command-perm"><code>nyoupdates.admin</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Schilder & Text (TextSigns) -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-sign-hanging"></i></span>
+          <h2>Schilder (TextSigns)</h2>
+          <span class="category-count">2</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card admin-card">
+              <div class="command-name">/textsign</div>
+              <div class="command-syntax">/textsign create &lt;Text&gt;</div>
+              <div class="command-desc">Erstellt ein formatiertes Textschild mit Farben und Formatierung (TextSigns).</div>
+              <div class="command-perm"><code>textsigns.admin.create</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/textsign reload</div>
+              <div class="command-syntax">/textsign reload</div>
+              <div class="command-desc">Lädt die TextSigns-Konfiguration und alle Schilder-Daten neu.</div>
+              <div class="command-perm"><code>textsigns.admin.reload</code></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Server-Konfiguration -->
+      <div class="category">
+        <div class="category-header">
+          <span class="category-icon"><i class="fa-solid fa-gear"></i></span>
+          <h2>Server-Konfiguration</h2>
+          <span class="category-count">3</span>
+          <i class="fa-solid fa-chevron-down category-chevron"></i>
+        </div>
+        <div class="commands-grid-wrapper">
+          <div class="commands-grid">
+
+            <div class="command-card admin-card">
+              <div class="command-name">/essentials reload</div>
+              <div class="command-syntax">/essentials reload</div>
+              <div class="command-desc">Lädt die EliteEssentials-Konfiguration und alle Module neu.</div>
+              <div class="command-perm"><code>eliteessentials.reload</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/hytalor</div>
+              <div class="command-syntax">/hytalor</div>
+              <div class="command-desc">Zeigt Hytalor Plugin-Informationen, Status und verfügbare Unterbefehle an.</div>
+              <div class="command-perm"><code>hytalor.admin</code></div>
+            </div>
+
+            <div class="command-card admin-card">
+              <div class="command-name">/hytalor reload</div>
+              <div class="command-syntax">/hytalor reload</div>
+              <div class="command-desc">Lädt die Hytalor-Konfiguration neu.</div>
+              <div class="command-perm"><code>hytalor.admin.reload</code></div>
             </div>
 
           </div>
